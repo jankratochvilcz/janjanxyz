@@ -1,0 +1,9 @@
+.social-icon {
+    margin: 0 32px;
+    opacity: 15%;
+  }
+
+  .social-icon:hover {
+    margin: 0 32px;
+    opacity: 50%;
+  }

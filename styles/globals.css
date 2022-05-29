@@ -2,8 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-size: 10pt;
+  font-family: 'Shippori Mincho', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: var(--colors-background);
 }
 
 a {
@@ -13,4 +15,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --colors-theme-primary: #BD0029;
+  --colors-gray: gray;
+  --colors-gray-light: #ededed;
+  --colors-background: #fafafa;
 }
