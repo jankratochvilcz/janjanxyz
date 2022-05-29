@@ -1,25 +1,26 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 10pt;
-  font-family: 'Shippori Mincho', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 10pt;
+    font-family: "Shippori Mincho", -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
     background: var(--colors-background);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-  --colors-theme-primary: #BD0029;
-  --colors-gray: gray;
-  --colors-gray-light: #ededed;
-  --colors-background: #fafafa;
+    --colors-theme-primary: #bd0029;
+    --colors-gray: gray;
+    --colors-gray-light: #ededed;
+    --colors-background: #fafafa;
 }
