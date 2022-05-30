@@ -2,9 +2,7 @@
 title: "Book Recap: Work Rules! by Laszlo Bock"
 date: "2017-07-16"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  [Work Rules](https://play.google.com/store/books/details/Laszlo_Bock_Work_Rules?id=M6idBAAAQBAJ&hl=en)! talks about the principles and practices applied by Google’s people ops team. It paints the picture of a data-driven, risk-seeking culture that’s willing to experiment and takes advantage of its scale by mining internal data to improve employees’ lives.
 coverImage: "/blog/9781455554799.jpg"
 ---
 

@@ -2,9 +2,9 @@
 title: "Book Recap: High Output Management by Andy Grove"
 date: "2017-12-02"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  [High Output Management](https://play.google.com/store/books/details/Andrew_S_Grove_High_Output_Management?id=piCeCgAAQBAJ&hl=en) is a collection of recipes for squeezing more performance out of your organization.
+
+  **The output of managers is an output of organizational units under their control or influence.** All focus should be on increasing team, not personal, performance.
 coverImage: "/blog/high-output-management-664x1024-1.jpg"
 ---
 
@@ -14,7 +14,7 @@ coverImage: "/blog/high-output-management-664x1024-1.jpg"
 
 **The output of managers is an output of organizational units under their control or influence.** All focus should be on increasing team, not personal, performance.
 
-A lot of Andy’s bear similarity to SCRUM. Both seem to be influenced by [Toyota](https://en.wikipedia.org/wiki/Toyota_Production_System). Both focus on continuous process optimization and setting up a system that keeps people challenged and motivated.
+A lot of Andy’s findings bear similarity to SCRUM. Both seem to be influenced by [Toyota](https://en.wikipedia.org/wiki/Toyota_Production_System). Both focus on continuous process optimization and setting up a system that keeps people challenged and motivated.
 
 ## Solid Ideas
 

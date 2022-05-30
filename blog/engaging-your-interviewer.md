@@ -2,9 +2,9 @@
 title: "Engaging Your Interviewer"
 date: "2020-09-27"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  We’ve been looking for [Windows devs](https://doist.com/jobs/#windows-developer) to help us work on our [Todoist for Windows 10 app.](https://todoist.com/windows)
+
+  **I want to share a few tips on how to have a good interview.** They’re based on my interviews of around 50 people. If the tips feel basic, you’re probably already making a consistent strong impression during an interviews!
 coverImage: "/blog/juri-gianfrancesco-rtfs5bqrxzk-unsplash.jpg"
 ---
 

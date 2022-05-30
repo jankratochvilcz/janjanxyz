@@ -2,9 +2,9 @@
 title: "Cracking Personal Planning with Todoist"
 date: "2021-09-18"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  Even though I've worked on [Todoist](https://todoist.com) for several years as a developer and a product person, I've never really felt that I figured out how to use Todoist myself. There was too much friction and disorganization in my setup. I've fallen off the wagon many times over the years.
+
+  This year, for the first time, I feel like I've finally nailed it, and I'm here to share; hopefully, it will give you some valuable ideas for your Todoist usage.
 coverImage: "/blog/image-2.png"
 ---
 

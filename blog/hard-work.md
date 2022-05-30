@@ -2,9 +2,9 @@
 title: "Hard Work"
 date: "2020-11-29"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  ****The best way to grow professionally in remote leadership positions is to proactively take over hard work in adjacent domains from your peers or boss.**** You will expand your ability to execute complex cross-team initiatives and prepare for the next step in your career.
+
+  This is the idea that stuck with me the most from reading [An Elegant Puzzle](https://janjan.xyz/2020/10/04/book-recap-an-elegant-puzzle-by-will-larson/). Let's go deeper.
 coverImage: "/blog/thomas-marban-ehk-eh1srzq-unsplash.jpg"
 ---
 

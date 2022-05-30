@@ -2,9 +2,9 @@
 title: "Book Recap: Scrum, The Art of Doing Twice the Work in Half the Time by Jeff Sutherland"
 date: "2017-12-10"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  One of the strongest [books](https://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X) I read this year. Well written and to the point, it dives deep into motivations behind the elements of Scrum.
+
+  While the book focuses on “pure” Scrum, many of its ideas are applicable [beyond Scrum](https://medium.com/project-management-learnings/spotify-squad-framework-part-i-8f74bcfcd761) as well.
 coverImage: "/blog/quino-al-qfgv_a8ncbg-unsplash.jpg"
 ---
 

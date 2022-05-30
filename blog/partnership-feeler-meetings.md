@@ -2,9 +2,11 @@
 title: "\"Partnership Feeler\" Meetings"
 date: "2020-09-28"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  Organizing productive meetings with clear-cut purpose, contained to your team and company is [challenging enough](https://blog.doist.com/9-rules-for-productive-meetings/).
+
+  Then there are the _partnership feeler meetings_.
+
+  The purpose of the partnership feeler meetings is to establish a personal connection with a potential partner company while brainstorming ideas for possible collaboration, ideally within thirty minutes. It's a tall order, especially for folks who are not born salesmen.
 coverImage: "/blog/claudio-schwarz-purzlbaum-k39rghmlov8-unsplash.jpg"
 ---
 

@@ -2,9 +2,9 @@
 title: "Book Recap: An Elegant Puzzle by Will Larson"
 date: "2020-10-04"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  [An Elegant Puzzle: Systems of Engineering Management](http://An Elegant Puzzle: Systems of Engineering Management) by Will Larson is an excellent entry into the growing collection of books by [Stripe Press](https://press.stripe.com/).
+
+  The book is a personal narrative of leading larger technical organizations. It presents the author's take on some of the most crucial challenges like **organizational design, the hiring pipeline, career narratives, and product work**.
 coverImage: "/blog/jeffrey-blum-ssv57guwwgu-unsplash.jpg"
 ---
 

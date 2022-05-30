@@ -2,9 +2,7 @@
 title: "Cookie-Based Redirection with Express.js"
 date: "2020-10-23"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  Cookie-based redirection can be used in some scenarios, such as redirects from marketing pages to the main web. Let's take a look at how to achieve it in NodeJS.
 coverImage: "/blog/jens-johnsson-36a3u4_uuhy-unsplash.jpg"
 ---
 

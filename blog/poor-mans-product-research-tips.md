@@ -2,9 +2,11 @@
 title: "Poor Man's Product Research Tips"
 date: "2021-08-29"
 preview: |
-  Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
-  Let’s take a look at the Kanban process.
+  My team is responsible for developing a diverse array of integrations into other products. We don't use most of these products and lack the intuition to figure out how to connect them with our products in a helpful way. For that reason, user research has become indispensable to help us learn what integrations to develop and what shape they should take.
+
+  At the same time, our company as a whole is vision-led, without dedicated user research resources. If you want to make user research happen, you have to do a lot of the leg work, with only occasional help.
+
+  And that's exactly what we've been doing over the past few months. In this post, I'll share a few tidbits that I've learned that help with **running lightweight user research efficiently on the side**.
 coverImage: "/blog/david-travis-5byxxawhoqg-unsplash.jpg"
 ---
 
