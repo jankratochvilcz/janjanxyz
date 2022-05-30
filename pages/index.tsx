@@ -35,7 +35,7 @@ const Home: NextPage = () => (
                     </a>
                 </Link>
 
-                <Link href="https://nextjs.org/learn">
+                <Link href="/projects">
                     <a className={styles.card}>
                         <h2>Projects</h2>
                         <p>Work I&lsquo;ve done both on and off the clock.</p>

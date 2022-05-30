@@ -29,7 +29,7 @@ export const getPosts = (folder: string, readDir: ReadDirFunc, readFile: ReadFil
         const file = readPostFile(folder, fileName, readFile);
         const { data: frontmatter } = matter(file);
         return parseMetadata(slug, frontmatter);
-    });
+    }).sort((a, b) => b.date.getTime() - a.date.getTime());
 
     return posts;
 };
@@ -45,10 +45,10 @@ export const getPost = (folder: string, slug: string, readFile: ReadFileFunc): P
     };
 };
 
-export const serialize = (posts: PostMetadata[]): SerializedPostMetadata[] => posts.map((x) => ({
+export const serialize = (x: PostMetadata): SerializedPostMetadata => ({
     ...x,
     date: x.date.getTime(),
-}))
+})
 
 export const deserialize = (x: SerializedPostMetadata): PostMetadata => ({
     ...x,
@@ -66,5 +66,5 @@ const parseMetadata = (
     title: frontmatter["title"],
     date: parse(frontmatter["date"], "yyyy-MM-dd", new Date()),
     preview: frontmatter["preview"],
-    image: frontmatter["image"]
+    image: frontmatter["coverImage"]
 });
