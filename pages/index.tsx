@@ -16,6 +16,7 @@ const Home: NextPage = () => (
 
         <main className={styles.main}>
             <h1 className={styles.title}>
+                <div>ヤ</div><br />
                 Hi, my name is{" "}
                 <span className={styles["author-name"]}>Jan</span>.
             </h1>

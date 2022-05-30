@@ -7,7 +7,7 @@
 
 .logo {
     grid-column: logo;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .navigation {
@@ -15,7 +15,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin-top: 1rem;
     padding: 0;
 }
 

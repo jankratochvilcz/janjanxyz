@@ -19,7 +19,9 @@ const Navigation = () => {
     return (
         <div className={styles["header-root"]}>
             <Link href="/">
-                <div className={styles.logo}>Jan Kratochvil</div>
+                <div className={styles.logo}>
+                    ヤ
+                </div>
             </Link>
             <ul className={styles.navigation}>
                 {routes.map(({ path, title }) => (
