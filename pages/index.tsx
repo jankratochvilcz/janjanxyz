@@ -45,8 +45,8 @@ const Home: NextPage = () => (
             </div>
             <div className={styles.social}>
                 <SocialIcon
-                    href="https://github.com/jankratochvilcz"
-                    alt="GitHub profile link"
+                    href="https://www.linkedin.com/in/jan-kratochv%C3%ADl-a3367b24/"
+                    alt="LinkedIn profile link"
                     src="/social/social-1_logo-linkedin.svg"
                 />
                 <SocialIcon
@@ -55,14 +55,14 @@ const Home: NextPage = () => (
                     src="/social/social-1_logo-github.svg"
                 />
                 <SocialIcon
-                    href="https://github.com/jankratochvilcz"
-                    alt="GitHub profile link"
-                    src="/social/social-1_logo-instagram.svg"
+                    href="https://twitter.com/jankratochvilcz"
+                    alt="Twitter profile link"
+                    src="/social/social-1_logo-twitter.svg"
                 />
                 <SocialIcon
-                    href="https://github.com/jankratochvilcz"
-                    alt="GitHub profile link"
-                    src="/social/social-1_logo-twitter.svg"
+                    href="https://www.instagram.com/janjan.xyz/"
+                    alt="Instagram profile link"
+                    src="/social/social-1_logo-instagram.svg"
                 />
             </div>
         </main>
