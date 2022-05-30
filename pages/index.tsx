@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import SocialIcon from "../components/social_icon";
 import styles from "../styles/Home.module.css";
 
@@ -27,15 +28,19 @@ const Home: NextPage = () => (
             </div>
 
             <div className={styles.grid}>
-                <a href="/blog" className={styles.card}>
-                    <h2>Blog</h2>
-                    <p>Musings on tech, leadership, and remote.</p>
-                </a>
+                <Link href="/blog">
+                    <a className={styles.card}>
+                        <h2>Blog</h2>
+                        <p>Musings on tech, leadership, and remote.</p>
+                    </a>
+                </Link>
 
-                <a href="https://nextjs.org/learn" className={styles.card}>
-                    <h2>Projects</h2>
-                    <p>Work I&lsquo;ve done both on and off the clock.</p>
-                </a>
+                <Link href="https://nextjs.org/learn">
+                    <a className={styles.card}>
+                        <h2>Projects</h2>
+                        <p>Work I&lsquo;ve done both on and off the clock.</p>
+                    </a>
+                </Link>
             </div>
             <div className={styles.social}>
                 <SocialIcon
