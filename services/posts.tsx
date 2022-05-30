@@ -66,5 +66,5 @@ const parseMetadata = (
     title: frontmatter["title"],
     date: parse(frontmatter["date"], "yyyy-MM-dd", new Date()),
     preview: frontmatter["preview"],
-    image: frontmatter["coverImage"]
+    image: frontmatter["coverImage"],
 });
