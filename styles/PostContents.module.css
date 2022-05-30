@@ -6,13 +6,11 @@
 .blog-preview-root h1 {
     margin-bottom: 0.5rem;
     font-size: 4rem;
-    text-align: center;
 }
 
 .blog-preview-root h2 {
     margin-bottom: 0.5rem;
     font-size: 2rem;
-    text-align: center;
 }
 
 .preview-text {
@@ -51,9 +49,15 @@
     .preview-text {
         max-width: 300px;
     }
+    
+
+    .blog-preview-root h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 
     .blog-preview-root h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .blog-preview-root .metadata {

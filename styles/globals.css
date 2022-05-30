@@ -2,11 +2,25 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    line-height: 2rem;
     font-family: "Shippori Mincho", -apple-system, BlinkMacSystemFont, Segoe UI,
         Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
     background: var(--colors-background);
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    line-height: 5rem;
+}
+
+h2 {
+    line-height: 1.75em;
+    margin-top: 2em;
 }
 
 a {
@@ -16,6 +30,13 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    html, body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }
 
 :root {

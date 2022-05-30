@@ -8,6 +8,7 @@
 .logo {
     grid-column: logo;
     font-size: 3rem;
+    margin-top: 0.5em;
 }
 
 .navigation {

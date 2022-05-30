@@ -23,3 +23,9 @@
     text-align: center;
     padding: 2rem;
 }
+
+@media (max-width: 800px) {
+    .blog-root {
+        padding: 1rem 0.5rem;
+    }
+}
