@@ -11,7 +11,7 @@ type ProjectProps = InferGetStaticPropsType<typeof getStaticProps>;
 export const getStaticProps = () => {
     const posts = getPosts(projectsFolder, fs.readdirSync, fs.readFileSync);
 
-    return toStaticProps(serialize(posts));
+    return toStaticProps({posts: posts.map(serialize)});
 };
 
 const Projects: NextPage<ProjectProps> = ({ posts }: ProjectProps) => (
