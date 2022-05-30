@@ -1,21 +1,19 @@
 import { InferGetStaticPropsType, NextPage } from "next";
+import fs from "fs"
 import Head from "next/head";
-import BlogPreview from "../components/blog_preview";
+import PostPreview from "../components/blog_preview";
 import { PageRoot } from "../components/page_root";
-import { blogFolder, getPosts } from "../services/posts";
+import { blogFolder, getPosts, serialize, deserialize } from "../services/posts";
 import styles from "../styles/Blog.module.css";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = () => {
-    const posts = getPosts(blogFolder);
+    const posts = getPosts(blogFolder, fs.readdirSync, fs.readFileSync);
 
     return {
         props: {
-            posts: posts.map((x) => ({
-                ...x,
-                date: x.date.getTime(),
-            })),
+            posts: serialize(posts)
         },
     };
 };
@@ -27,9 +25,9 @@ const Blog: NextPage<BlogProps> = ({ posts }: BlogProps) => (
         </Head>
         <div className={styles["blog-list"]}>
             {posts.map((x) => (
-                <BlogPreview
+                <PostPreview
                     key={x.slug}
-                    post={{ ...x, date: new Date(x.date) }}
+                    post={deserialize(x)}
                 />
             ))}
         </div>

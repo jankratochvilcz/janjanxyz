@@ -1,14 +1,15 @@
+import fs from "fs";
 import { GetStaticPaths, InferGetStaticPropsType, NextPage } from "next";
 import { PageRoot } from "../../components/page_root";
 import { Post, getPost, getPosts, blogFolder } from "../../services/posts";
 import md from "markdown-it";
-import styles from "../../styles/BlogPost.module.css";
+import styles from "../../styles/Post.module.css";
 import Head from "next/head";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths: GetStaticPaths = () => {
-    const posts = getPosts(blogFolder);
+    const posts = getPosts(blogFolder, fs.readdirSync, fs.readFileSync);
 
     return {
         paths: posts.map((x) => ({ params: { slug: x.slug } })),
@@ -21,7 +22,7 @@ export const getStaticProps = ({
 }: {
     params: { slug: string };
 }) => {
-    const post = getPost(blogFolder, slug);
+    const post = getPost(blogFolder, slug, fs.readFileSync);
 
     return {
         props: {
@@ -33,7 +34,7 @@ export const getStaticProps = ({
     };
 };
 
-const BlogPost: NextPage<BlogProps> = ({ post }: { post: Post }) => (
+const Post: NextPage<BlogProps> = ({ post }: { post: Post }) => (
     <PageRoot>
         <Head>
             <title>{post.title} | Jan Kratochvil</title>

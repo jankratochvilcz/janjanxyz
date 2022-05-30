@@ -1,10 +1,10 @@
 import { PostMetadata } from "../services/posts";
-import styles from "../styles/BlogPreview.module.css";
+import styles from "../styles/PostPreview.module.css";
 import md from "markdown-it";
 import Link from "./link";
 import Image from "next/image";
 
-const BlogPreview = ({ post }: { post: PostMetadata }) => {
+const PostPreview = ({ post }: { post: PostMetadata }) => {
     const previewContent = `${post.preview}
     
 [Continue reading →](${`/blog/${post.slug}`})`
@@ -34,4 +34,4 @@ const BlogPreview = ({ post }: { post: PostMetadata }) => {
     );
 };
 
-export default BlogPreview;
+export default PostPreview;
