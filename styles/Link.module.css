@@ -1,0 +1,12 @@
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: var(--colors-theme-primary);
+}
+
+.active {
+    color: var(--colors-theme-primary);
+}

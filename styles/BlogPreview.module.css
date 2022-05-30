@@ -1,0 +1,17 @@
+.blog-preview-root {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+
+.blog-preview-root h2 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-preview-root a:hover {
+    text-decoration: underline;
+}
+
+.blog-preview-root .metadata {
+    color: var(--colors-gray);
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,7 @@
+.blog-root h2 {
+    font-size: 2rem;
+}
+
+.blog-list > * {
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,24 @@
+.header-root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: [logo] max-content auto [navigation] max-content;
+}
+
+.logo {
+    grid-column: logo;
+    font-size: 2rem;
+}
+
+.navigation {
+    grid-column: navigation;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    padding: 1rem;
+    font-size: 1.25rem;
+}

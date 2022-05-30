@@ -28,9 +28,9 @@ const Home: NextPage = () => (
             </div>
 
             <div className={styles.grid}>
-                <a href="https://nextjs.org/docs" className={styles.card}>
+                <a href="/blog" className={styles.card}>
                     <h2>Blog</h2>
-                    <p>Musings on tech, leadership, remote, and books.</p>
+                    <p>Musings on tech, leadership, and remote.</p>
                 </a>
 
                 <a href="https://nextjs.org/learn" className={styles.card}>
