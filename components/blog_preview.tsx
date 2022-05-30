@@ -5,6 +5,10 @@ import Link from "./link";
 import Image from "next/image";
 
 const BlogPreview = ({ post }: { post: PostMetadata }) => {
+    const previewContent = `${post.preview}
+    
+[Continue reading →](${`/blog/${post.slug}`})`
+
     return (
         <div className={styles["blog-preview-root"]}>
             <Link href={`/blog/${post.slug}`}>
@@ -24,9 +28,8 @@ const BlogPreview = ({ post }: { post: PostMetadata }) => {
 
             <div
                 className={styles["preview-text"]}
-                dangerouslySetInnerHTML={{ __html: md().render(post.preview) }}
+                dangerouslySetInnerHTML={{ __html: md().render(previewContent) }}
             />
-        <Link href={`/blog/${post.slug}`} className={styles["preview-text"]}>Continue reading</Link>
         </div>
     );
 };

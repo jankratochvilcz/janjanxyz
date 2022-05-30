@@ -21,6 +21,10 @@
     margin: 0 auto;
 }
 
+.blog-preview-root a {
+    color: var(--colors-theme-primary);
+}
+
 .blog-preview-root a:hover {
     text-decoration: underline;
 }
