@@ -19,7 +19,7 @@ const Blog: NextPage<BlogProps> = ({ posts }: BlogProps) => (
         <Head>
             <title>Jan Kratochvil | Blog</title>
         </Head>
-        <PostList posts={posts.map(deserialize)} />
+        <PostList posts={posts.map(deserialize)} contentType={"blog"} />
     </PageRoot>
 );
 
