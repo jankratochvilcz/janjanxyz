@@ -17,3 +17,5 @@ It's also my main sandbox for keeping my technical skillset sharp and experiment
 This has been an amazing project to help me grow and push me to expore areas I otherwise wouldn't. E.g., the Kotobaten apps are published on Play, Microsoft Store, and App Store, which helped me get exposure of all the store ecosystems. The app is also connected to [Mixpanel](https://mixpanel.com) through [Segment](https://segment.com/), helping me learn new analytics tools.
 
 [Give it a try !](https://kotobaten.app)
+
+You can find the source code for the Flutter app [here](https://github.com/jankratochvilcz/kotobaten-flutter/).
