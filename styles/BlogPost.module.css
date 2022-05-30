@@ -1,8 +1,7 @@
 .blog-root {
     background: white;
     padding: 1rem 4rem;
-    margin-top: 2rem;
-    box-shadow: 0 0 16px var(--colors-gray-light);
+    box-shadow: var(--decorations-box-shadow);
 }
 
 .blog-post img {

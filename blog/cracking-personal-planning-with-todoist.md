@@ -44,7 +44,7 @@ My previous Todoist setup was heavily deadline-driven. If something should get d
 
 This system *kind of* worked but had a bunch of weak points:
 
-* By pretending that everything has a hard deadline (most things don't), my<strong>&nbsp;prioritization became about hitting as many arbitrary deadlines as possible, not focusing on what's the most important.
+* By pretending that everything has a hard deadline (most things don't), my prioritization became about hitting as many arbitrary deadlines as possible, not focusing on what's the most important.
 * **Brutal for work that involves async collaboration.** Deadlines for personal work items are very stressful when working asynchronously. Response time and quality vary significantly between people within async companies, so planning to finish tasks requiring collaboration within a specific day is a fool's errand.
 * My Todoist required **constant upkeep**. rescheduling late tasks, scheduling new tasks, etc. If I didn't do it for two days, the overdue tasks overwhelmed the app, and I became resentful of opening it, compounding the problem.
 * Keeping personal and work tasks were difficult, as they both surfaced in the *Today* view with Todoist.
