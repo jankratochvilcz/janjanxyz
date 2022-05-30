@@ -20,6 +20,14 @@
 }
 
 .navigation li {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1.25rem;
+}
+
+@media (max-width: 500px) {
+    .header-root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

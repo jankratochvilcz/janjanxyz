@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { useRouter } from "next/router";
 import styles from "../styles/Navigation.module.css";
 import Link from "./link";
@@ -9,21 +8,25 @@ const Navigation = () => {
     const routes: { path: string; title: string }[] = [
         {
             path: "/blog",
-            title: "Blog"
+            title: "Blog",
         },
         {
             path: "/projects",
-            title: "Projects"
-        }
+            title: "Projects",
+        },
     ];
 
     return (
         <div className={styles["header-root"]}>
-            <Link href="/"><div className={styles.logo}>Jan Kratochvil</div></Link>
+            <Link href="/">
+                <div className={styles.logo}>Jan Kratochvil</div>
+            </Link>
             <ul className={styles.navigation}>
-                {routes.map(({path, title}) => (
+                {routes.map(({ path, title }) => (
                     <li key={path}>
-                        <Link href={path} isActive={router.pathname === path}>{title}</Link>
+                        <Link href={path} isActive={router.pathname === path}>
+                            {title}
+                        </Link>
                     </li>
                 ))}
             </ul>

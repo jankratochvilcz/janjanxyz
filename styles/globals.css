@@ -22,6 +22,5 @@ a {
     --colors-theme-primary: #bd0029;
     --colors-gray: gray;
     --colors-gray-light: #ededed;
-    --colors-background: #fafafa;
-    --decorations-box-shadow: 0 0 16px var(--colors-gray-light);
+    --colors-background: #fdfdfd;
 }

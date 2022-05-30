@@ -6,10 +6,11 @@ const Link: React.FC<{
     children: React.ReactNode;
     href: string;
     isActive?: boolean;
-}> = ({ children, isActive, href }) => (
+    className?: string
+}> = ({ children, isActive, href, className }) => (
     <NextLink href={href}>
         <div
-            className={classNames(styles.link, {
+            className={classNames(styles.link, className, {
                 [styles.active]: isActive ?? false,
             })}
         >

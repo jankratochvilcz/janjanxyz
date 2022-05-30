@@ -1,13 +1,14 @@
 import { GetStaticPaths, InferGetStaticPropsType, NextPage } from "next";
 import { PageRoot } from "../../components/page_root";
-import { BlogPost, getBlogPost, getBlogPosts } from "../../services/blogPosts";
+import { Post, getPost, getPosts, blogFolder } from "../../services/posts";
 import md from "markdown-it";
 import styles from "../../styles/BlogPost.module.css";
+import Head from "next/head";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths: GetStaticPaths = () => {
-    const posts = getBlogPosts();
+    const posts = getPosts(blogFolder);
 
     return {
         paths: posts.map((x) => ({ params: { slug: x.slug } })),
@@ -20,7 +21,7 @@ export const getStaticProps = ({
 }: {
     params: { slug: string };
 }) => {
-    const post = getBlogPost(slug);
+    const post = getPost(blogFolder, slug);
 
     return {
         props: {
@@ -32,8 +33,11 @@ export const getStaticProps = ({
     };
 };
 
-const BlogPost: NextPage<BlogProps> = ({ post }: { post: BlogPost }) => (
+const BlogPost: NextPage<BlogProps> = ({ post }: { post: Post }) => (
     <PageRoot>
+        <Head>
+            <title>{post.title} | Jan Kratochvil</title>
+        </Head>
         <div className={styles["blog-root"]}>
             <h1>{post.title}</h1>
             <div className={styles.metadata}>
@@ -48,4 +52,4 @@ const BlogPost: NextPage<BlogProps> = ({ post }: { post: BlogPost }) => (
     </PageRoot>
 );
 
-export default BlogPost;
+export default Post;

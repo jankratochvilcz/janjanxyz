@@ -2,25 +2,27 @@ import fs from "fs";
 import { parse } from "date-fns";
 import matter from "gray-matter";
 
-export type BlogPostMetadata = {
+export type PostMetadata = {
     title: string;
     preview: string;
     date: Date;
     slug: string;
+    image: string;
 };
 
-export type BlogPost = BlogPostMetadata & {
+export type Post = PostMetadata & {
     content: string;
 };
 
-const postsFolder = "blog";
+export const blogFolder = "blog";
+export const projectsFolder = "projects";
 
-export const getBlogPosts = (): BlogPostMetadata[] => {
-    const files = fs.readdirSync(postsFolder);
+export const getPosts = (folder: string): PostMetadata[] => {
+    const files = fs.readdirSync(folder);
 
     const posts = files.map((fileName) => {
         const slug = fileName.replace(".md", "");
-        const readFile = readBlogFile(fileName);
+        const readFile = readPostFile(folder, fileName);
         const { data: frontmatter } = matter(readFile);
         return parseMetadata(slug, frontmatter);
     });
@@ -28,8 +30,8 @@ export const getBlogPosts = (): BlogPostMetadata[] => {
     return posts;
 };
 
-export const getBlogPost = (slug: string): BlogPost => {
-    const file = readBlogFile(slug + ".md");
+export const getPost = (folder: string, slug: string): Post => {
+    const file = readPostFile(folder, slug + ".md");
 
     const { data: frontmatter, content } = matter(file);
 
@@ -39,15 +41,16 @@ export const getBlogPost = (slug: string): BlogPost => {
     };
 };
 
-const readBlogFile = (fileName: string) =>
-    fs.readFileSync(`${postsFolder}/${fileName}`, "utf-8");
+const readPostFile = (folder: string, fileName: string) =>
+    fs.readFileSync(`${folder}/${fileName}`, "utf-8");
 
 const parseMetadata = (
     slug: string,
     frontmatter: { [key: string]: any }
-): BlogPostMetadata => ({
+): PostMetadata => ({
     slug,
     title: frontmatter["title"],
     date: parse(frontmatter["date"], "yyyy-MM-dd", new Date()),
     preview: frontmatter["preview"],
+    image: frontmatter["image"]
 });

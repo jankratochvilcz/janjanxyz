@@ -11,7 +11,6 @@ const Home: NextPage = () => (
                 name="description"
                 content="Jan Kratochvil's personal web site"
             />
-            <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <main className={styles.main}>
