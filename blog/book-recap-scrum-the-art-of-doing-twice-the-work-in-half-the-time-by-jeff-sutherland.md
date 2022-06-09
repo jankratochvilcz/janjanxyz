@@ -24,7 +24,7 @@ Scrum is a way to build fast-moving, cross-functional teams. Some of the basic e
 - Scrum measures team happiness by the end of each sprint. **Happiness is a _leading indicator_ of future performance.** [According to Andy Grove](https://janjan.xyz/2017/12/02/book-recap-high-output-management-by-andy-grove/), tracking and evaluating leading indicators is one of the most critical activities a manager should do.
 - Road maps are loose visions at best. The actual plan changes from sprint to sprint based on learnings from past sprints.
 
-_Further reading: Microsoft published_ [_a research paper_](https://collaboration.csc.ncsu.edu/laurie/Papers/ESEM11_SCRUM_Experience_CameraReady.pdf) _that _discusses_ practical concerns of implementing Scrum in software engineering teams. It’s a good read._
+_Further reading: Microsoft published_ [_a research paper_](https://collaboration.csc.ncsu.edu/laurie/Papers/ESEM11_SCRUM_Experience_CameraReady.pdf) _that \_discusses_ practical concerns of implementing Scrum in software engineering teams. It’s a good read.\_
 
 # Solid Ideas
 
@@ -44,7 +44,7 @@ _Further reading: Microsoft published_ [_a research paper_](https://collaboratio
 
 **Use** [**Planning Poker**](https://en.wikipedia.org/wiki/Planning_poker) **for effort estimation.** Planning poker gets the best of the team’s collective wisdom when estimating. At the same time, it helps with preventing herd mentality and can surface diverging perspectives on implementation.
 
-**Process improvements are a part of the process.** _Kaizen_s are a fantastic idea for two reasons. First, by making process improvements a core part of the process they’re improving, you can make sure that they get priority. Second, by making it explicit that everyone needs to come up with _kaizen_s, you increase the chance of soliciting good ideas from teammates.
+**Process improvements are a part of the process.** \_Kaizen_s are a fantastic idea for two reasons. First, by making process improvements a core part of the process they’re improving, you can make sure that they get priority. Second, by making it explicit that everyone needs to come up with \_kaizen_s, you increase the chance of soliciting good ideas from teammates.
 
 [**The product owner**](https://melissaperri.com/blog/2017/06/29/product-manager-vs-product-owner) **needs to have enough time for the role.** Jeff Sutherland recommends against appointing senior executives to be product owners. The reason is that a product owner is a time-consuming role. Senior executives tend to be time-constrained, so they might not be the best fit.
 

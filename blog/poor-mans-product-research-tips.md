@@ -47,7 +47,7 @@ If you're not strong at doing this kind of note-taking, I recommend you **volun
 
 ## #3 Source Interviewees on Reddit
 
-__This bit of advice only applies if you work on something that is or interacts with a consumer-facing service, it might not work as well for business-to-business offerings.__
+**This bit of advice only applies if you work on something that is or interacts with a consumer-facing service, it might not work as well for business-to-business offerings.**
 
 **Sourcing people for research on Reddit is a slam dunk**.
 
@@ -67,7 +67,7 @@ I got very fortunate to get help from one of our stellar designers when thinking
 
 **If your company already uses a tool for mocking, learn at least the basics. Ask around about where do designers store mocks and if you can use them.** If you can find a cache of pre-existing mocks, you've hit gold. Adopting existing mocks is much easier than making new ones from scratch; reuse saves you a lot of time.
 
-* * *
+---
 
 Hopefully, the tips above will help you kick-start your guerilla user research, generate great ideas, and fine-tune them while also having a ton of fun!
 

@@ -1,66 +1,65 @@
 .blog-preview-root {
-    display: grid;
-    grid-template-rows: max-content max-content max-content;
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
 }
 
 .blog-preview-root h1 {
-    margin-bottom: 0.5rem;
-    font-size: 4rem;
+  margin-bottom: 0.5rem;
+  font-size: 4rem;
 }
 
 .blog-preview-root h2 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .preview-text {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .preview-text img {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .preview-text pre {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 .blog-preview-root a {
-    color: var(--colors-theme-primary);
+  color: var(--colors-theme-primary);
 }
 
 .blog-preview-root a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .blog-preview-root a h1 {
-    color: black;
+  color: black;
 }
 
 .blog-preview-root .metadata {
-    color: var(--colors-gray);
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
+  color: var(--colors-gray);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 800px) {
-    .preview-text {
-        max-width: 300px;
-    }
-    
+  .preview-text {
+    max-width: 300px;
+  }
 
-    .blog-preview-root h1 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
+  .blog-preview-root h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 
-    .blog-preview-root h2 {
-        font-size: 1.5rem;
-    }
+  .blog-preview-root h2 {
+    font-size: 1.5rem;
+  }
 
-    .blog-preview-root .metadata {
-        font-size: 1.25em;
-    }
+  .blog-preview-root .metadata {
+    font-size: 1.25em;
+  }
 }

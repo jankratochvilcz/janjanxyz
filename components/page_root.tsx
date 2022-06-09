@@ -3,11 +3,11 @@ import styles from "../styles/PageRoot.module.css";
 import Navigation from "./navigation";
 
 export const PageRoot: React.FC<{ children: React.ReactNode }> = ({
-    children,
+  children,
 }) => (
-    <div className={styles["page-root"]}>
-        {" "}
-        <Navigation />
-        {children}
-    </div>
+  <div className={styles["page-root"]}>
+    {" "}
+    <Navigation />
+    {children}
+  </div>
 );

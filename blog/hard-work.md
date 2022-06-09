@@ -8,7 +8,7 @@ preview: |
 coverImage: "/blog/thomas-marban-ehk-eh1srzq-unsplash.jpg"
 ---
 
-****The best way to grow professionally in remote leadership positions is to proactively take over hard work in adjacent domains from your peers or boss.**** You will expand your ability to execute complex cross-team initiatives and prepare for the next step in your career.
+\***\*The best way to grow professionally in remote leadership positions is to proactively take over hard work in adjacent domains from your peers or boss.\*\*** You will expand your ability to execute complex cross-team initiatives and prepare for the next step in your career.
 
 This is the idea that stuck with me the most from reading [An Elegant Puzzle](https://janjan.xyz/2020/10/04/book-recap-an-elegant-puzzle-by-will-larson/). Let's go deeper.
 
@@ -24,7 +24,7 @@ _Hard work_ is:
 
 _Example 1:_ You're an engineering lead. Your scope is to lead the development of an API and accompanying docs. In one of the technical leads meeting, you learn that the company is gearing to revamp the budgeting process. This change will have a significant impact on all technical leads. Someone should represent engineering in the process. The head of the engineering org is swamped. Taking responsibility for representing eng's interests is _hard work_.
 
-_Example 2:_ You're a customer success manager. One of the technical teams is a frequent source of bugs that you hear from customers; long bug resolution times make some customers abandon the product. This is a frequently discussed topic in the company, but there's no obvious resolution. You proactively offer to help the technical team improve their backlog management and find an effective triaging process. You don't know much about the technical teams' internal processes, but you have a great understanding of customers' priorities. Crossing the team boundary to the other side and finding a solution _within_ another team is _hard_ work.
+_Example 2:_ You're a customer success manager. One of the technical teams is a frequent source of bugs that you hear from customers; long bug resolution times make some customers abandon the product. This is a frequently discussed topic in the company, but there's no obvious resolution. You proactively offer to help the technical team improve their backlog management and find an effective triaging process. You don't know much about the technical teams' internal processes, but you have a great understanding of customers' priorities. Crossing the team boundary to the other side and finding a solution *within* another team is *hard* work.
 
 You can probably come up with several examples like this within your company without much thinking. All of these represent _hard work_.
 
@@ -46,7 +46,7 @@ This knowledge is a **superpower when executing cross-team projects with ever-in
 
 Understand how other teams spec out work, prioritize and schedule enables you to tailor information to their needs when the time comes. You will find yourself collaborating with them with little time to getting to know each other; serving information in the right way makes collaboration easier.
 
-You will also understand how other teams operate _within_ the context of your company. You will discover many tricks and strategies on how to work within your company's system effectively. This information is specific to your company, so other teams are one of the only ways to source it.
+You will also understand how other teams operate *within* the context of your company. You will discover many tricks and strategies on how to work within your company's system effectively. This information is specific to your company, so other teams are one of the only ways to source it.
 
 ### Understand Your Boss
 
