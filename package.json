@@ -8,12 +8,13 @@
     "start": "next start",
     "lint:check": "next lint",
     "format:fix": "npx prettier --write .",
-    "format:check": "npx prettier ."
+    "format:check": "npx prettier --check ."
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
+    "insights-js": "^1.2.11",
     "markdown-it": "^13.0.1",
     "next": "12.1.6",
     "react": "18.1.0",
