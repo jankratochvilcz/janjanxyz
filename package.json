@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:fix": "npx prettier --write ."
+    "format:fix": "npx prettier --write .",
+    "format:check": "npx prettier ."
   },
   "dependencies": {
     "classnames": "^2.3.1",
