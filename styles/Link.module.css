@@ -1,12 +1,12 @@
 .link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .link:hover {
-    text-decoration: underline;
-    color: var(--colors-theme-primary);
+  text-decoration: underline;
+  color: var(--colors-theme-primary);
 }
 
 .active {
-    color: var(--colors-theme-primary);
+  color: var(--colors-theme-primary);
 }

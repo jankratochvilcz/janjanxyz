@@ -1,5 +1,5 @@
 .blog-list > * {
-    box-shadow: var(--decorations-box-shadow);
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
+  box-shadow: var(--decorations-box-shadow);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }

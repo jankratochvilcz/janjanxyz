@@ -20,7 +20,6 @@ To make Todoist truly useful, I need it to do a couple of things for me.
 
 Every Monday, I reflect on the prior work week and plan the next one, [as every Doister](https://twitter.com/amix3k/status/1120317586963685379).
 
-  
 This process includes looking at my Todoist to keep commitments and make meaningful progress beyond the usual firefighting. The goal is to generate a list that looks as follows.
 
 ![Weekly snippets](/blog/snippets.webp)
@@ -41,23 +40,23 @@ At the same time, I don't want to see that I'm late on my phone bill while at wo
 
 ## Previous setup
 
-My previous Todoist setup was heavily deadline-driven. If something should get done, it gets a specific day, and I will pluck it from the _Today_ view when the time comes.
+My previous Todoist setup was heavily deadline-driven. If something should get done, it gets a specific day, and I will pluck it from the *Today* view when the time comes.
 
-This system _kind of_ worked but had a bunch of weak points:
+This system *kind of* worked but had a bunch of weak points:
 
 1. By pretending that everything has a hard deadline (most things don't), my **prioritization became about hitting as many arbitrary deadlines as possible, not focusing on what's the most important.**
 2. **Brutal for work that involves async collaboration.** Deadlines for personal work items are very stressful when working asynchronously. Response time and quality vary significantly between people within async companies, so planning to finish tasks requiring collaboration within a specific day is a fool's errand.
 3. My Todoist required **constant upkeep**—rescheduling late tasks, scheduling new tasks, etc. If I didn't do it for two days, the overdue tasks overwhelmed the app, and I became resentful of opening it, compounding the problem.
-4. Keeping personal and work tasks were difficult, as they both surfaced in the _Today_ view with Todoist.
+4. Keeping personal and work tasks were difficult, as they both surfaced in the *Today* view with Todoist.
 
 ## New setup
 
 To tackle the above problem, my new setup has several building blocks:
 
-1. The _@current_ and _@upcoming_ labels indicate work that is in the current or upcoming batches. However, I define those two timeboxes.
-2. Only tasks that _must_ be completed by a specific date get a due date, nothing else.
-3. Only two top-level projects exist in my account: _Doist_ (where I work) and _Personal_. Both of these have many subprojects.
-4. Finally, four filters. _Personal (current)_, _Personal (upcoming)_, _Doist (current)_, and _Doist (upcoming)_
+1. The *@current* and *@upcoming* labels indicate work that is in the current or upcoming batches. However, I define those two timeboxes.
+2. Only tasks that *must* be completed by a specific date get a due date, nothing else.
+3. Only two top-level projects exist in my account: *Doist* (where I work) and *Personal*. Both of these have many subprojects.
+4. Finally, four filters. *Personal (current)*, *Personal (upcoming)*, *Doist (current)*, and *Doist (upcoming)*
 
 ![Filters in Todoist](/blog/image-2.png)
 
@@ -81,8 +80,8 @@ For Todoist pros, the queries are as below.
 
 ```
 
-This system allows me to meet all actual deadlines while still tailoring my day based on where I feel I can make the most impact _today_ based on which collaboration ping-pongs moved forward and how I feel.
+This system allows me to meet all actual deadlines while still tailoring my day based on where I feel I can make the most impact *today* based on which collaboration ping-pongs moved forward and how I feel.
 
-As a bonus, it also cuts the time I need to spend on rescheduling tasks as I need to switch from _@upcoming_ to _@current_ and scout for the next _@upcoming_ tasks only when I'm done with the _@curent_ ones. I still typically do this weekly at work, but it's much more fluent for my personal life.
+As a bonus, it also cuts the time I need to spend on rescheduling tasks as I need to switch from *@upcoming* to *@current* and scout for the next *@upcoming* tasks only when I'm done with the *@curent* ones. I still typically do this weekly at work, but it's much more fluent for my personal life.
 
 I hope you found learning a bit about my setup helpful, and if you're struggling with your Todoist setup, you have walked away with some fresh ideas for things to try! ~

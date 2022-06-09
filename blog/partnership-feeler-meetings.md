@@ -1,5 +1,5 @@
 ---
-title: "\"Partnership Feeler\" Meetings"
+title: '"Partnership Feeler" Meetings'
 date: "2020-09-28"
 preview: |
   Organizing productive meetings with clear-cut purpose, contained to your team and company is [challenging enough](https://blog.doist.com/9-rules-for-productive-meetings/).

@@ -3,12 +3,12 @@ title: "Becoming a Native Remote Citizen"
 date: "2020-10-20"
 preview: |
   In this post, I'm trying to summarize the pitfalls of working from home without the remote-first mindset I've experienced.
-  
+
   I'm also adding a few tips that worked for me over the years. They helped me at various points of my remote journey. I hope others will find them useful as well!
 coverImage: "/blog/xps-6uneklgrjps-unsplash-1.jpg"
 ---
 
-__In this post, I'm trying to summarize the pitfalls of working from home without the remote-first mindset I've experienced. I'm also adding a few tips that worked for me over the years. They helped me at various points of my remote journey. I hope others will find them useful as well!__
+**In this post, I'm trying to summarize the pitfalls of working from home without the remote-first mindset I've experienced. I'm also adding a few tips that worked for me over the years. They helped me at various points of my remote journey. I hope others will find them useful as well!**
 
 This year, I've seen many of my family members and friends transition to working from their homes full-time. In most cases, their workplaces were not built for remote-first and now embrace the always-online culture. Hearing their experiences reminded me of how tough is the journey from working in the office to being fully-remote.
 
@@ -36,25 +36,25 @@ In companies where the big picture is hard to influence, I'd like to share a few
 
 ## Individual Contributor Tips
 
-****Talk to your team lead.**** The first thing I recommend. It's your team lead's job to make sure you have the best possible conditions to succeed. If the new team meeting interferes with you needing to pick up your kid from school, it's your team lead's job to figure out a solution. If you're exhausted by all the Zoom calls, ask your team lead to work on a team process that's less meeting-heavy.
+\***\*Talk to your team lead.\*\*** The first thing I recommend. It's your team lead's job to make sure you have the best possible conditions to succeed. If the new team meeting interferes with you needing to pick up your kid from school, it's your team lead's job to figure out a solution. If you're exhausted by all the Zoom calls, ask your team lead to work on a team process that's less meeting-heavy.
 
-****Ask for an agenda before accepting a meeting.**** If you can, explicitly ask for a written agenda before accepting a meeting or a call. If the other person can't present an agenda, try to politely postpone the meeting until there's one. Even if you fail in delaying the meeting, you have created an expectation for next time, resulting in fewer meetings down the road.
+\***\*Ask for an agenda before accepting a meeting.\*\*** If you can, explicitly ask for a written agenda before accepting a meeting or a call. If the other person can't present an agenda, try to politely postpone the meeting until there's one. Even if you fail in delaying the meeting, you have created an expectation for next time, resulting in fewer meetings down the road.
 
 **Comment on the agenda before the meeting.** If you get an agenda before the meeting, try to reply to it with what you'd say during the meeting and ending the email with something along the lines of _Let me know if you'd like to discuss further_; _otherwise, we could skip the meeting?_ Most people want to skip meetings as much as you do; make it as easy for them as possible.
 
-****Delay responses to unimportant requests.**** If you get lots of DMs from specific people asking you about things they could quickly solve themselves, intentionally delay your answer. This is frustrating for the other person in the beginning, but you motivate them to self-solve. In the long term, the stream of messages slows to a trickle; everyone is better off.
+\***\*Delay responses to unimportant requests.\*\*** If you get lots of DMs from specific people asking you about things they could quickly solve themselves, intentionally delay your answer. This is frustrating for the other person in the beginning, but you motivate them to self-solve. In the long term, the stream of messages slows to a trickle; everyone is better off.
 
-****Unapologetically exit overtime meetings.**** If you have a problematic meeting scheduled for 30 minutes but routinely running for 60 minutes, try to schedule one of your meetings to follow the problematic one. This allows you to exit the first meeting at the 30-minute mark gracefully. Be explicit that the meeting was scheduled for 30 minutes and that you have another meeting coming up. Doing so generates pressure on the meeting organizer to run the meeting better and not go overtime. 
+\***\*Unapologetically exit overtime meetings.\*\*** If you have a problematic meeting scheduled for 30 minutes but routinely running for 60 minutes, try to schedule one of your meetings to follow the problematic one. This allows you to exit the first meeting at the 30-minute mark gracefully. Be explicit that the meeting was scheduled for 30 minutes and that you have another meeting coming up. Doing so generates pressure on the meeting organizer to run the meeting better and not go overtime.
 
-****Have a hobby with scheduled events.**** Having hobbies with fixed time slots (language lessons, music band practice, etc.) that are hard to cancel is incredibly helpful to help to build the crucial work/life boundary.
+\***\*Have a hobby with scheduled events.\*\*** Having hobbies with fixed time slots (language lessons, music band practice, etc.) that are hard to cancel is incredibly helpful to help to build the crucial work/life boundary.
 
 _Most of the tips are about adding small bits of friction to reduce the frequency of interruptions. If people contact you, they should feel a bit of pressure to come prepared._
 
 ## Team-Wide Tips
 
-__If you can effectively influence your team or set policy, you're well-positioned to improve your team's well-being and long-term productivity.__
+**If you can effectively influence your team or set policy, you're well-positioned to improve your team's well-being and long-term productivity.**
 
-****Model individual contributor behaviors.**** If you start rejecting meetings without an agenda and make it clear that it's ok to not respond within five minutes, as suggested above, your team will quickly follow and adopt the same behaviors.
+\***\*Model individual contributor behaviors.\*\*** If you start rejecting meetings without an agenda and make it clear that it's ok to not respond within five minutes, as suggested above, your team will quickly follow and adopt the same behaviors.
 
 **Create a "Meeting Best Practices"** **document**. Early during my time at Doist, we created [a policy for conducting meetings](https://blog.doist.com/9-rules-for-productive-meetings/) that enshrined best practices like _"no meetings without an agenda"_ or _"all meetings last a maximum of 60 minutes"_. This made it clear that meetings have limits. Having a similar policy on the team level can improve the meeting culture as well.
 
@@ -62,7 +62,7 @@ __If you can effectively influence your team or set policy, you're well-position
 
 **Promote a culture of sharing current stress levels and emotional challenges.** By openly talking about your mood, stress levels, or health problems and encouraging the whole team to do the same, you can create a team culture of caring for each other and cutting folks slack when they're not at their best. Team members are great at supporting each other through burnout or other work/life balance issues, but they need to know that it's happening.
 
-****Model, document, and share.**** As suggested in the book [An Elegant Puzzle by Will Larson](https://janjan.xyz/2020/10/04/book-recap-an-elegant-puzzle-by-will-larson/), once you find behavior that works and spread it in your team, consider evangelizing it beyond your team as well. Other parts of the company will be happy to adopt battle-tested solutions to problems they're also likely facing.
+\***\*Model, document, and share.\*\*** As suggested in the book [An Elegant Puzzle by Will Larson](https://janjan.xyz/2020/10/04/book-recap-an-elegant-puzzle-by-will-larson/), once you find behavior that works and spread it in your team, consider evangelizing it beyond your team as well. Other parts of the company will be happy to adopt battle-tested solutions to problems they're also likely facing.
 
 ## In Closing
 

@@ -4,7 +4,7 @@ date: "2016-12-16"
 coverImage: "/blog/joseph-greve-8iwevf9a2dg-unsplash.jpg"
 preview: |
   Overall, where Scrum feels like a structured approach with an eye on speed, Kanban feels like a _flowing river_. There’s no time-boxing. Instead, Kanban focuses on creating a clean and narrow channel for your work to flow though. 
-  
+
   Let’s take a look at the Kanban process.
 ---
 

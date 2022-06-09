@@ -32,8 +32,8 @@ Thoughtful questions give you more information about us. They also serve to show
 
 Great questions are many, here are few common themes:
 
-- **Questions that show you’ve done your research.** _“I’ve read a blog post on your site. Can you talk about how does decision-making work in that structure?” —_ demonstrates that the candidate researched the company.
-- **Questions about engineering processes.** _“I’m curious how features get designed in a remote environment, what are some of the drawbacks compared to on-site companies?” —_ demonstrates you care about product quality.
+- **Questions that show you’ve done your research.** *“I’ve read a blog post on your site. Can you talk about how does decision-making work in that structure?” —* demonstrates that the candidate researched the company.
+- **Questions about engineering processes.** *“I’m curious how features get designed in a remote environment, what are some of the drawbacks compared to on-site companies?” —* demonstrates you care about product quality.
 - **Questions about product specifics.** _“We use Slack. I read about_ [_Twist and how it differentiates with threaded communication. What do you think about the threads feature recently introduced into Slack?” -Shows that you know our product and are curious about product design._](https://twistapp.com/)
 
 ## 2\. Go Into Specifics

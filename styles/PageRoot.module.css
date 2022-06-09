@@ -1,14 +1,14 @@
 .page-root {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 800px;
-    margin: auto;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 800px) {
-    .page-root {
-        max-width: 100%;
-    }
+  .page-root {
+    max-width: 100%;
+  }
 }

@@ -1,31 +1,31 @@
 .blog-root {
-    padding: 1rem 4rem;
-    box-shadow: var(--decorations-box-shadow);
+  padding: 1rem 4rem;
+  box-shadow: var(--decorations-box-shadow);
 }
 
 .blog-post img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .blog-post h2 {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .blog-post h3 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .metadata {
-    color: var(--colors-gray)
+  color: var(--colors-gray);
 }
 
 .ijou {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 @media (max-width: 800px) {
-    .blog-root {
-        padding: 1rem 0.5rem;
-    }
+  .blog-root {
+    padding: 1rem 0.5rem;
+  }
 }

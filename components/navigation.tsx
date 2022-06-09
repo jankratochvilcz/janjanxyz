@@ -3,37 +3,35 @@ import styles from "../styles/Navigation.module.css";
 import Link from "./link";
 
 const Navigation = () => {
-    const router = useRouter();
+  const router = useRouter();
 
-    const routes: { path: string; title: string }[] = [
-        {
-            path: "/blog",
-            title: "Blog",
-        },
-        {
-            path: "/projects",
-            title: "Projects",
-        },
-    ];
+  const routes: { path: string; title: string }[] = [
+    {
+      path: "/blog",
+      title: "Blog",
+    },
+    {
+      path: "/projects",
+      title: "Projects",
+    },
+  ];
 
-    return (
-        <div className={styles["header-root"]}>
-            <Link href="/">
-                <div className={styles.logo}>
-                    ヤ
-                </div>
+  return (
+    <div className={styles["header-root"]}>
+      <Link href="/">
+        <div className={styles.logo}>ヤ</div>
+      </Link>
+      <ul className={styles.navigation}>
+        {routes.map(({ path, title }) => (
+          <li key={path}>
+            <Link href={path} isActive={router.pathname === path}>
+              {title}
             </Link>
-            <ul className={styles.navigation}>
-                {routes.map(({ path, title }) => (
-                    <li key={path}>
-                        <Link href={path} isActive={router.pathname === path}>
-                            {title}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Navigation;
