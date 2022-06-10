@@ -14,3 +14,6 @@ jobs:
 
       - name: Run Lint Check
         run: npm run lint:check
+
+      - name: Run Unit Tests
+        run: npm run test
