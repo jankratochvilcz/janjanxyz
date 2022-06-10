@@ -1,20 +1,20 @@
+import test from "ava";
 import { getConfiguration } from "./configuration";
 
-// const defaultAuthor = 'author'
-// const defaultUrlRoot = 'url_root'
+const defaultInsightsUrl = "https://a.com/";
 
-// describe("configuration", () => {
-//     beforeEach('reset env', () => {
-//         process.env.URL_ROOT = undefined
-//         process.env.AUTHOR = undefined
-//     })
-    
-//     test('valid configuration', () => {
-//         process.env.URL_ROOT = defaultUrlRoot
-//         process.env.AUTHOR = defaultAuthor
-    
-//         const actual = getConfiguration()
-//         expect(actual.authorName, defaultAuthor)
-//         expect(actual.urlRoot, defaultUrlRoot)
-//     })
-// })
+test.beforeEach(() => {
+  // Assigning undefined results in a string 'undefined' value
+  process.env.INSIGHTS_URL = "";
+});
+
+test("throw if insights URL empty", (t) => {
+  t.throws(() => getConfiguration());
+});
+
+test("returns insights URL", (t) => {
+  process.env.INSIGHTS_URL = defaultInsightsUrl;
+
+  const { insightsUrl } = getConfiguration();
+  t.is(insightsUrl, defaultInsightsUrl);
+});
