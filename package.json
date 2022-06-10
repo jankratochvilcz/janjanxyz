@@ -8,11 +8,13 @@
     "start": "next start",
     "lint:check": "next lint",
     "format:fix": "npx prettier --write .",
-    "format:check": "npx prettier --check ."
+    "format:check": "npx prettier --check .",
+    "test": "ava"
   },
   "dependencies": {
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
+    "dotenv": "^16.0.1",
     "gray-matter": "^4.0.3",
     "insights-js": "^1.2.11",
     "markdown-it": "^13.0.1",
@@ -25,9 +27,19 @@
     "@types/node": "17.0.36",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
+    "ava": "^4.3.0",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "prettier": "2.6.2",
-    "typescript": "4.7.2"
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.2"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }
