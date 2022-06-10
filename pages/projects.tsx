@@ -6,7 +6,6 @@ import {
   getPosts,
   serialize,
   deserialize,
-  projectsFolder,
 } from "../services/posts";
 import PostList from "../components/post_list";
 import { toStaticProps } from "../utils/staticPropHelpers";
@@ -14,7 +13,7 @@ import { toStaticProps } from "../utils/staticPropHelpers";
 type ProjectProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = () => {
-  const posts = getPosts(projectsFolder, fs.readdirSync, fs.readFileSync);
+  const posts = getPosts("projects", fs.readdirSync, fs.readFileSync);
 
   return toStaticProps({ posts: posts.map(serialize) });
 };

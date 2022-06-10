@@ -1,15 +1,26 @@
 export type AppConfiguration = {
   insightsUrl: string;
+  siteUrl: string
 };
 
-export const getConfiguration = (): AppConfiguration => {
-  const insightsUrl = process.env.INSIGHTS_URL;
-  console.log(insightsUrl);
-  if (!insightsUrl) {
-    throw new Error("Insights URL not configured");
+export const getConfiguration = (): AppConfiguration => ({
+  insightsUrl: getEnvironmentVariableSafe(
+    process.env.INSIGHTS_URL,
+    "Insights URL"
+  ),
+  siteUrl: getEnvironmentVariableSafe(
+    process.env.SITE_URL,
+    "site URL"
+  ),
+});
+
+const getEnvironmentVariableSafe = (
+  value: string | undefined,
+  name: string
+): string => {
+  if (!value) {
+    throw new Error(`${name} not configured`);
   }
 
-  return {
-    insightsUrl,
-  };
+  return value;
 };

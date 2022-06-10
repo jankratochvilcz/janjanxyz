@@ -4,7 +4,6 @@ import { PageRoot } from "../../components/page_root";
 import {
   getPost,
   getPosts,
-  blogFolder,
   serialize,
   deserialize,
   SerializedPostMetadata,
@@ -18,7 +17,7 @@ import PostContents from "../../components/post_contents";
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths: GetStaticPaths = () => {
-  const posts = getPosts(blogFolder, fs.readdirSync, fs.readFileSync);
+  const posts = getPosts("blog", fs.readdirSync, fs.readFileSync);
 
   return {
     paths: posts.map((x) => ({ params: { slug: x.slug } })),
@@ -31,7 +30,7 @@ export const getStaticProps = ({
 }: {
   params: { slug: string };
 }) => {
-  const post = getPost(blogFolder, slug, fs.readFileSync);
+  const post = getPost("blog", slug, fs.readFileSync);
   return toStaticProps({ post: serialize(post) });
 };
 

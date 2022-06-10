@@ -1,4 +1,4 @@
-import { blogFolder, PostMetadata, projectsFolder } from "../services/posts";
+import { PostFolders, PostMetadata } from "../services/posts";
 import styles from "../styles/PostContents.module.css";
 import md from "markdown-it";
 import Link from "./link";
@@ -15,7 +15,7 @@ const PostContents = ({
   content?: string;
   contentType: ContentType;
 }) => {
-  const prefix = contentType === "blog" ? blogFolder : projectsFolder;
+  const prefix: PostFolders = contentType === "blog" ? "blog" : "projects";
   const url = `/${prefix}/${metadata.slug}`;
 
   const previewContent = !content
