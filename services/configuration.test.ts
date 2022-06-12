@@ -5,8 +5,8 @@ const defaultInsightsUrl = "https://a.com/";
 
 test.beforeEach(() => {
   // Assigning undefined results in a string 'undefined' value
-  process.env.INSIGHTS_URL = "";
-  process.env.SITE_URL = "https://site.com";
+  process.env.NEXT_PUBLIC_INSIGHTS_URL = "";
+  process.env.NEXT_PUBLIC_SITE_URL = "https://site.com";
 });
 
 test("throw if insights URL empty", (t) => {
@@ -14,7 +14,7 @@ test("throw if insights URL empty", (t) => {
 });
 
 test("returns insights URL", (t) => {
-  process.env.INSIGHTS_URL = defaultInsightsUrl;
+  process.env.NEXT_PUBLIC_INSIGHTS_URL = defaultInsightsUrl;
 
   const { insightsUrl } = getConfiguration();
   t.is(insightsUrl, defaultInsightsUrl);

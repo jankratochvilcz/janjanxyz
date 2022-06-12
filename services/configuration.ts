@@ -5,10 +5,13 @@ export type AppConfiguration = {
 
 export const getConfiguration = (): AppConfiguration => ({
   insightsUrl: getEnvironmentVariableSafe(
-    process.env.INSIGHTS_URL,
+    process.env.NEXT_PUBLIC_INSIGHTS_URL,
     "Insights URL"
   ),
-  siteUrl: getEnvironmentVariableSafe(process.env.SITE_URL, "site URL"),
+  siteUrl: getEnvironmentVariableSafe(
+    process.env.NEXT_PUBLIC_SITE_URL,
+    "site URL"
+  ),
 });
 
 const getEnvironmentVariableSafe = (
