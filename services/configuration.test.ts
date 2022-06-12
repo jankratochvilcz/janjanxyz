@@ -14,7 +14,7 @@ test("throw if insights URL empty", (t) => {
 });
 
 test("returns insights URL", (t) => {
-  process.env.INSIGHTS_URL = defaultInsightsUrl;
+  process.env.NEXT_PUBLIC_INSIGHTS_URL = defaultInsightsUrl;
 
   const { insightsUrl } = getConfiguration();
   t.is(insightsUrl, defaultInsightsUrl);
