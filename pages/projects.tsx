@@ -2,11 +2,7 @@ import { InferGetStaticPropsType, NextPage } from "next";
 import fs from "fs";
 import Head from "next/head";
 import { PageRoot } from "../components/page_root";
-import {
-  getPosts,
-  serialize,
-  deserialize,
-} from "../services/posts";
+import { getPosts, serialize, deserialize } from "../services/posts";
 import PostList from "../components/post_list";
 import { toStaticProps } from "../utils/staticPropHelpers";
 

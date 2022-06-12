@@ -1,1 +1,1 @@
-export const rssRoot = "./public/rss"
+export const rssRoot = "./public/rss";

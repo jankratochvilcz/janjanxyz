@@ -23,7 +23,7 @@ export type SerializedPostMetadata = Omit<PostMetadata, "date"> & {
 export type BlogFolder = "blog";
 export type ProjectsFolder = "projects";
 
-export type PostFolders = BlogFolder | ProjectsFolder
+export type PostFolders = BlogFolder | ProjectsFolder;
 
 export const getPosts = (
   folder: PostFolders,

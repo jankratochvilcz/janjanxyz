@@ -11,15 +11,18 @@ import styles from "../styles/Home.module.css";
 import { toStaticProps } from "../utils/staticPropHelpers";
 
 export const getStaticProps = () => {
-  const { siteUrl } = getConfiguration()
-  const feed = getRssFeed(() => getPosts('blog', fs.readdirSync, fs.readFileSync), siteUrl)
-  fs.mkdirSync(rssRoot, {recursive: true})
-  fs.writeFileSync(`${rssRoot}/feed.xml`, feed.rss2())
-  fs.writeFileSync(`${rssRoot}/feed.json`, feed.json1())
-  fs.writeFileSync(`${rssRoot}/atom.xml`, feed.atom1())
+  const { siteUrl } = getConfiguration();
+  const feed = getRssFeed(
+    () => getPosts("blog", fs.readdirSync, fs.readFileSync),
+    siteUrl
+  );
+  fs.mkdirSync(rssRoot, { recursive: true });
+  fs.writeFileSync(`${rssRoot}/feed.xml`, feed.rss2());
+  fs.writeFileSync(`${rssRoot}/feed.json`, feed.json1());
+  fs.writeFileSync(`${rssRoot}/atom.xml`, feed.atom1());
 
-  return toStaticProps({})
-}
+  return toStaticProps({});
+};
 
 const Home: NextPage = () => (
   <div className={styles.container}>
