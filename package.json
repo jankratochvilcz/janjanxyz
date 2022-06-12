@@ -15,6 +15,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "dotenv": "^16.0.1",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "insights-js": "^1.2.11",
     "markdown-it": "^13.0.1",

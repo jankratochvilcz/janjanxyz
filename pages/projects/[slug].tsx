@@ -8,7 +8,6 @@ import {
   deserialize,
   SerializedPostMetadata,
   Post,
-  projectsFolder,
 } from "../../services/posts";
 import styles from "../../styles/Post.module.css";
 import Head from "next/head";
@@ -18,7 +17,7 @@ import PostContents from "../../components/post_contents";
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths: GetStaticPaths = () => {
-  const posts = getPosts(projectsFolder, fs.readdirSync, fs.readFileSync);
+  const posts = getPosts("projects", fs.readdirSync, fs.readFileSync);
 
   return {
     paths: posts.map((x) => ({ params: { slug: x.slug } })),
@@ -31,7 +30,7 @@ export const getStaticProps = ({
 }: {
   params: { slug: string };
 }) => {
-  const post = getPost(projectsFolder, slug, fs.readFileSync);
+  const post = getPost("projects", slug, fs.readFileSync);
   return toStaticProps({ post: serialize(post) });
 };
 

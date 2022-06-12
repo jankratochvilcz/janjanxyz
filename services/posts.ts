@@ -13,18 +13,20 @@ export type Post = PostMetadata & {
   content: string;
 };
 
-type ReadDirFunc = (folder: string) => string[];
-type ReadFileFunc = (file: string, encoding: BufferEncoding) => string;
+export type ReadDirFunc = (folder: string) => string[];
+export type ReadFileFunc = (file: string, encoding: BufferEncoding) => string;
 
 export type SerializedPostMetadata = Omit<PostMetadata, "date"> & {
   date: number;
 };
 
-export const blogFolder = "blog";
-export const projectsFolder = "projects";
+export type BlogFolder = "blog";
+export type ProjectsFolder = "projects";
+
+export type PostFolders = BlogFolder | ProjectsFolder;
 
 export const getPosts = (
-  folder: string,
+  folder: PostFolders,
   readDir: ReadDirFunc,
   readFile: ReadFileFunc
 ): PostMetadata[] => {
@@ -43,7 +45,7 @@ export const getPosts = (
 };
 
 export const getPost = (
-  folder: string,
+  folder: PostFolders,
   slug: string,
   readFile: ReadFileFunc
 ): Post => {

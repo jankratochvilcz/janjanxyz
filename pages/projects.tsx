@@ -2,19 +2,14 @@ import { InferGetStaticPropsType, NextPage } from "next";
 import fs from "fs";
 import Head from "next/head";
 import { PageRoot } from "../components/page_root";
-import {
-  getPosts,
-  serialize,
-  deserialize,
-  projectsFolder,
-} from "../services/posts";
+import { getPosts, serialize, deserialize } from "../services/posts";
 import PostList from "../components/post_list";
 import { toStaticProps } from "../utils/staticPropHelpers";
 
 type ProjectProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = () => {
-  const posts = getPosts(projectsFolder, fs.readdirSync, fs.readFileSync);
+  const posts = getPosts("projects", fs.readdirSync, fs.readFileSync);
 
   return toStaticProps({ posts: posts.map(serialize) });
 };

@@ -6,6 +6,7 @@ const defaultInsightsUrl = "https://a.com/";
 test.beforeEach(() => {
   // Assigning undefined results in a string 'undefined' value
   process.env.INSIGHTS_URL = "";
+  process.env.SITE_URL = "https://site.com";
 });
 
 test("throw if insights URL empty", (t) => {

@@ -1,8 +1,28 @@
 import type { NextPage } from "next";
+import fs from "fs";
 import Head from "next/head";
 import Link from "next/link";
 import SocialIcon from "../components/social_icon";
+import { rssRoot } from "../const/paths";
+import { getConfiguration } from "../services/configuration";
+import { getPosts } from "../services/posts";
+import { getRssFeed } from "../services/rss";
 import styles from "../styles/Home.module.css";
+import { toStaticProps } from "../utils/staticPropHelpers";
+
+export const getStaticProps = () => {
+  const { siteUrl } = getConfiguration();
+  const feed = getRssFeed(
+    () => getPosts("blog", fs.readdirSync, fs.readFileSync),
+    siteUrl
+  );
+  fs.mkdirSync(rssRoot, { recursive: true });
+  fs.writeFileSync(`${rssRoot}/feed.xml`, feed.rss2());
+  fs.writeFileSync(`${rssRoot}/feed.json`, feed.json1());
+  fs.writeFileSync(`${rssRoot}/atom.xml`, feed.atom1());
+
+  return toStaticProps({});
+};
 
 const Home: NextPage = () => (
   <div className={styles.container}>
