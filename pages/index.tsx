@@ -9,6 +9,7 @@ import { getPosts } from "../services/posts";
 import { getRssFeed } from "../services/rss";
 import styles from "../styles/Home.module.css";
 import { toStaticProps } from "../utils/staticPropHelpers";
+import { BLOG_DESCRIPTION } from "../const/strings";
 
 export const getStaticProps = () => {
   const { siteUrl } = getConfiguration();
@@ -28,7 +29,9 @@ const Home: NextPage = () => (
   <div className={styles.container}>
     <Head>
       <title>Jan Kratochvil</title>
-      <meta name="description" content="Jan Kratochvil's personal web site" />
+      <meta name="description" content={BLOG_DESCRIPTION} />
+      <link rel="alternate" type="application/rss+xml" title="janjan.xyz RSS feed" href="/rss/feed.xml" />
+      <link rel="alternate" type="application/rss+atom" title="janjan.xyz RSS feed" href="/rss/atom.xml" />
     </Head>
 
     <main className={styles.main}>

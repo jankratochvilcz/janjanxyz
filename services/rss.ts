@@ -1,8 +1,6 @@
 import { Feed } from "feed";
+import { BLOG_COPYRIGHT, BLOG_DESCRIPTION, BLOG_TITLE } from "../const/strings";
 import { PostMetadata } from "./posts";
-
-export const RSS_TITLE = "janjan.xyz";
-export const RSS_COPYRIGHT = `All rights reserved ${new Date().getFullYear()}, Jan Kratochvil`;
 
 export const getRssFeed = (
   getPosts: () => PostMetadata[],
@@ -13,8 +11,9 @@ export const getRssFeed = (
   const feed = new Feed({
     id: siteUrl,
     link: siteUrl,
-    title: RSS_TITLE,
-    copyright: RSS_COPYRIGHT,
+    title: BLOG_TITLE,
+    copyright: BLOG_COPYRIGHT,
+    description: BLOG_DESCRIPTION
   });
 
   posts.forEach((x) =>
