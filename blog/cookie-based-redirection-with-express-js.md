@@ -61,6 +61,11 @@ To set up the server-side redirect, we need to pull together a few pieces:
 ### 1\. Read the Cookies
 
 To read the cookies, we can use the [cookie-parser](https://github.com/expressjs/cookie-parser) library. After doing `npm install cookie-parser`, we add it to _index.js_ as the first piece of middleware as follows:
+<<<<<<< HEAD
+=======
+
+``` javascript
+>>>>>>> 1d18c6a (Adds code highlighting)
 
 ```javascript
 const app = express();
@@ -101,6 +106,10 @@ Lastly, we need to apply the middleware to intercept all calls to our landing pa
 We do this by adding the middleware to the `app.use` call that serves our landing pages, like so:
 
 ```javascript
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d18c6a (Adds code highlighting)
 app.use(
   "/",
   redirectIfAuthenticated("authcookiekey", "true", "/app"),
