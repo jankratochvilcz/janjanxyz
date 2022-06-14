@@ -30,8 +30,18 @@ const Home: NextPage = () => (
     <Head>
       <title>Jan Kratochvil</title>
       <meta name="description" content={BLOG_DESCRIPTION} />
-      <link rel="alternate" type="application/rss+xml" title="janjan.xyz RSS feed" href="/rss/feed.xml" />
-      <link rel="alternate" type="application/rss+atom" title="janjan.xyz RSS feed" href="/rss/atom.xml" />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="janjan.xyz RSS feed"
+        href="/rss/feed.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/rss+atom"
+        title="janjan.xyz RSS feed"
+        href="/rss/atom.xml"
+      />
     </Head>
 
     <main className={styles.main}>

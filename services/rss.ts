@@ -13,7 +13,7 @@ export const getRssFeed = (
     link: siteUrl,
     title: BLOG_TITLE,
     copyright: BLOG_COPYRIGHT,
-    description: BLOG_DESCRIPTION
+    description: BLOG_DESCRIPTION,
   });
 
   posts.forEach((x) =>
