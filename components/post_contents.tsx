@@ -1,8 +1,10 @@
 import { PostFolders, PostMetadata } from "../services/posts";
 import styles from "../styles/PostContents.module.css";
-import md from "markdown-it";
+import mdHighlightJs from "markdown-it-highlightjs";
 import Link from "./link";
 import CoverImage from "./cover_image";
+import md from "markdown-it";
+import "highlight.js/styles/github.css";
 
 export type ContentType = "blog" | "project";
 
@@ -24,6 +26,11 @@ const PostContents = ({
 [Continue reading →](${url})`
     : content;
 
+  const renderer = md();
+  renderer.use(mdHighlightJs);
+
+  console.log(previewContent);
+
   return (
     <div className={styles["blog-preview-root"]}>
       <Link href={url}>
@@ -40,7 +47,7 @@ const PostContents = ({
       <div
         className={styles["preview-text"]}
         dangerouslySetInnerHTML={{
-          __html: md().render(previewContent),
+          __html: renderer.render(previewContent),
         }}
       />
     </div>

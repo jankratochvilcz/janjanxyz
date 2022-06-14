@@ -3,6 +3,12 @@
   grid-template-rows: max-content max-content max-content;
 }
 
+.blog-preview-root code {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  background-color: var(--colors-background);
+}
+
 .blog-preview-root h1 {
   margin-bottom: 0.5rem;
   font-size: 4rem;

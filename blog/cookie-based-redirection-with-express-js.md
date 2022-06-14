@@ -15,7 +15,7 @@ It's common to redirect the users to _/app_ when they have an existing authentic
 
 If you don't have a dedicated proxy and host both the landing pages and the web app on the same [Express.js](https://expressjs.com/) server, your setup might look as follows.
 
-```
+```javascript
 
 import express from "express";
 import path from "path";
@@ -60,13 +60,11 @@ To set up the server-side redirect, we need to pull together a few pieces:
 
 ### 1\. Read the Cookies
 
-To read the cookies, we can use the `[cookie-parser](https://github.com/expressjs/cookie-parser)` library. After doing `npm install cookie-parser`, we add it to _index.js_ as the first piece of middleware as follows:
+To read the cookies, we can use the [cookie-parser](https://github.com/expressjs/cookie-parser) library. After doing `npm install cookie-parser`, we add it to _index.js_ as the first piece of middleware as follows:
 
-```
-
+```javascript
 const app = express();
 app.use(cookieParser());
-
 ```
 
 This will result in cookies available at `request.cookies` within our middleware.
@@ -77,7 +75,7 @@ Next up, we need to create a piece of middleware that'll look at the present coo
 
 If you're unsure about the concept of middleware in Express.js, have a quick peek at [the docs](https://expressjs.com/en/guide/writing-middleware.html) first.
 
-```
+```javascript
 
 const redirectIfAuthenticated = (cookieKey, cookieTrueValue, redirectPath) => (req, res, next) => {
     const hasCookie = cookieKey in req.cookies;
@@ -102,22 +100,12 @@ Lastly, we need to apply the middleware to intercept all calls to our landing pa
 
 We do this by adding the middleware to the `app.use` call that serves our landing pages, like so:
 
-```
-
+```javascript
 app.use(
-    "/",
-    redirectIfAuthenticated(
-        "authcookiekey",
-        "true",
-        "/app"
-    ),
-    express.static(path.join(
-        path.resolve(),
-        "..",
-        "landing/public"
-    ))
+  "/",
+  redirectIfAuthenticated("authcookiekey", "true", "/app"),
+  express.static(path.join(path.resolve(), "..", "landing/public"))
 );
-
 ```
 
 _app.js_
@@ -128,7 +116,7 @@ And we're done. 🎉 Now all requests that contain the cookie `authcookiekey=tru
 
 For convenience, here's the entirety of _app.js_ after we're done.
 
-```
+```javascript
 
 import express from "express";
 import cookieParser from "cookie-parser";
