@@ -29,8 +29,6 @@ const PostContents = ({
   const renderer = md();
   renderer.use(mdHighlightJs);
 
-  console.log(previewContent);
-
   return (
     <div className={styles["blog-preview-root"]}>
       <Link href={url}>
