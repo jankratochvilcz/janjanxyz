@@ -13,6 +13,8 @@ import styles from "../../styles/Post.module.css";
 import Head from "next/head";
 import { toStaticProps } from "../../utils/staticPropHelpers";
 import PostContents from "../../components/post_contents";
+import { getConfiguration } from "../../services/configuration";
+import path from "path";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -38,20 +40,35 @@ const Post: NextPage<BlogProps> = ({
   post,
 }: {
   post: SerializedPostMetadata & Pick<Post, "content">;
-}) => (
-  <PageRoot>
-    <Head>
-      <title>{post.title} | Jan Kratochvil</title>
-    </Head>
-    <div className={styles["blog-root"]}>
-      <PostContents
-        metadata={deserialize(post)}
-        content={post.content}
-        contentType={"blog"}
-      />
-      <div className={styles["ijou"]}>～　以上　～</div>
-    </div>
-  </PageRoot>
-);
+}) => {
+  const siteUrl = getConfiguration().siteUrl;
+  const imagePath = path.join(siteUrl, post.image);
+  const canonicalUrl = path.join(siteUrl, "blog", post.slug);
+
+  return (
+    <PageRoot>
+      <Head>
+        <title>{post.title} | Jan Kratochvil</title>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:description" content={post.preview} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@jankratochvilcz" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.preview} />
+        <meta name="twitter:image" content={imagePath} />
+      </Head>
+      <div className={styles["blog-root"]}>
+        <PostContents
+          metadata={deserialize(post)}
+          content={post.content}
+          contentType={"blog"}
+        />
+        <div className={styles["ijou"]}>～　以上　～</div>
+      </div>
+    </PageRoot>
+  );
+};
 
 export default Post;
