@@ -38,7 +38,7 @@ const PostContents = ({
       </Link>
       {contentType == "blog" && (
         <div className={styles.metadata}>
-          {metadata.date.toLocaleDateString()}
+          {metadata.date.toDateString()}
         </div>
       )}
       <CoverImage post={metadata} />
