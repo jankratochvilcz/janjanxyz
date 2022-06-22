@@ -1,13 +1,15 @@
 .image-container {
-  position: relative;
-  width: 700px;
-  height: 400px;
+  width: 100%;
   margin: 2rem auto;
 }
 
-@media (max-width: 800px) {
-  .image-container {
-    width: 300px;
-    height: 300px;
-  }
+/* These are hacks to enable full-bleed with NextJS, I need to read up on the Image component to do it properly */
+
+.image-container > * {
+  position: relative !important;
+}
+
+.image-container > * > img {
+  position: relative !important;
+  height: auto !important;
 }

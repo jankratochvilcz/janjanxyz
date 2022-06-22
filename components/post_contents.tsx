@@ -31,17 +31,15 @@ const PostContents = ({
 
   return (
     <div className={styles["blog-preview-root"]}>
-      <Link href={url}>
+      <Link href={url} className={styles["title"]}>
         <a href={url}>
           <h1>{metadata.title}</h1>
         </a>
       </Link>
       {contentType == "blog" && (
-        <div className={styles.metadata}>
-          {metadata.date.toLocaleDateString()}
-        </div>
+        <div className={styles.metadata}>{metadata.date.toDateString()}</div>
       )}
-      <CoverImage post={metadata} />
+      <CoverImage post={metadata} className={styles["cover-image"]} />
       <div
         className={styles["preview-text"]}
         dangerouslySetInnerHTML={{
