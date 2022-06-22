@@ -7,6 +7,7 @@ preview: |
   This post outlines proven **practices related to managing relationships with your reports, building a robust internal network, advocating for org-wide changes, and keeping your team's execution velocity high in a remote environment**.
   Adopting them can help you thrive as a team lead in any async-first company.
 coverImage: "/blog/avi-richards-Z3ownETsdNQ-unsplash.jpg"
+twitterImage: "/blog/avi-richards-Z3ownETsdNQ-unsplash-twitter.jpg"
 ---
 
 An increasing number of teams are transitioning to remote, async-first ways of working.

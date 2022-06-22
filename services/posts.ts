@@ -7,6 +7,7 @@ export type PostMetadata = {
   date: Date;
   slug: string;
   image: string;
+  twitterImage?: string; // needs to be 1200x630 https://webmasters.stackexchange.com/a/130911
 };
 
 export type Post = PostMetadata & {
@@ -84,4 +85,5 @@ const parseMetadata = (
   date: parse(frontmatter["date"], "yyyy-MM-dd", new Date()),
   preview: frontmatter["preview"],
   image: frontmatter["coverImage"],
+  twitterImage: frontmatter["twitterImage"] ?? null,
 });
