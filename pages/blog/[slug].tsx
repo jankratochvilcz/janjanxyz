@@ -45,7 +45,10 @@ const Post: NextPage<BlogProps> = ({
     <Head>
       <title>{post.title} | Jan Kratochvil</title>
       <meta property="og:title" content={post.title} />
-      <meta property="og:image" content={path.join(getConfiguration().siteUrl, post.image)} />
+      <meta
+        property="og:image"
+        content={path.join(getConfiguration().siteUrl, post.image)}
+      />
       <meta property="og:description" content={post.preview} />
     </Head>
     <div className={styles["blog-root"]}>
