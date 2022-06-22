@@ -43,7 +43,7 @@ const Post: NextPage<BlogProps> = ({
 }) => {
   const siteUrl = getConfiguration().siteUrl;
   const imagePath = path.join(siteUrl, post.image);
-  const canonicalUrl = path.join(siteUrl, "blog", post.slug)
+  const canonicalUrl = path.join(siteUrl, "blog", post.slug);
 
   return (
     <PageRoot>
