@@ -43,6 +43,9 @@ const Post: NextPage<BlogProps> = ({
 }) => {
   const siteUrl = getConfiguration().siteUrl;
   const imagePath = new URL(post.image, siteUrl).href;
+  const twitterImagePath = post.twitterImage
+    ? new URL(post.twitterImage, siteUrl).href
+    : undefined;
   const canonicalUrl = new URL(path.join("blog", post.slug), siteUrl).href;
 
   return (
@@ -57,8 +60,12 @@ const Post: NextPage<BlogProps> = ({
         <meta name="twitter:site" content="@jankratochvilcz" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.preview} />
-        <meta name="twitter:image" content={imagePath} />
-        <meta name="twitter:image:alt" content={post.title} />
+        {twitterImagePath && (
+          <>
+            <meta name="twitter:image" content={twitterImagePath} />
+            <meta name="twitter:image:alt" content={post.title} />
+          </>
+        )}
       </Head>
       <div className={styles["blog-root"]}>
         <PostContents
