@@ -37,9 +37,7 @@ const PostContents = ({
         </a>
       </Link>
       {contentType == "blog" && (
-        <div className={styles.metadata}>
-          {metadata.date.toDateString()}
-        </div>
+        <div className={styles.metadata}>{metadata.date.toDateString()}</div>
       )}
       <CoverImage post={metadata} />
       <div

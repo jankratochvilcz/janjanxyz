@@ -2,10 +2,10 @@
 title: "Lessons from Seven Years of Managing Async-First Remote Teams"
 date: "2022-06-22"
 preview: |
-    An increasing number of teams are transitioning to remote, async-first ways of working.
-    Async-first work brings a lot of positives, but it's not without challenges that can cause a loss of context and speed.
-    This post outlines proven **practices related to managing relationships with your reports, building a robust internal network, advocating for org-wide changes, and keeping your team's execution velocity high in a remote environment**.
-    Adopting them can help you thrive as a team lead in any async-first company.
+  An increasing number of teams are transitioning to remote, async-first ways of working.
+  Async-first work brings a lot of positives, but it's not without challenges that can cause a loss of context and speed.
+  This post outlines proven **practices related to managing relationships with your reports, building a robust internal network, advocating for org-wide changes, and keeping your team's execution velocity high in a remote environment**.
+  Adopting them can help you thrive as a team lead in any async-first company.
 coverImage: "/blog/avi-richards-Z3ownETsdNQ-unsplash.jpg"
 ---
 
@@ -21,7 +21,7 @@ Lastly, you might need to optimize your team's operations to continue executing 
 
 ## Adopting Relationships with Reports
 
-*1:1s are king.*
+_1:1s are king._
 
 1:1s are the most critical tool for evolving relationships with your reports, understanding their needs, and helping them grow.
 
@@ -47,7 +47,7 @@ A bit of uncomfortable silence is your friend.
 Each report is different.
 Some like structured 1:1 formats following techniques like [start-stop-continue](https://www.chrisarnold.org/start-stop-continue/).
 Others prefer to freestyle it.
-Iterate the format together to get the most value out of it. 
+Iterate the format together to get the most value out of it.
 The goal should always be to place the responsibility for the 1:1 with your report and ask them to drive it.
 If your report takes charge of your time together, prepares topics, and injects energy, it's proof they are highly motivated and want to keep improving.
 
@@ -65,7 +65,7 @@ In remote, opportunities to connect on a human level are rare, so being able to 
 
 ## Keeping a Healthy Internal Network
 
-*1:1s are still king.*
+_1:1s are still king._
 
 Similar to relationships within the team, 1:1s are the most powerful tool in your toolbox.
 While many tools trying to automate internal networking like [Donut](https://www.donut.com/) are cropping up, leveraging them to build long-lasting relationships that are useful beyond the social aspect is hard.
@@ -116,12 +116,12 @@ Try as many writing frameworks, tips, and tools as possible, and find how to mel
 **Embrace the jargon.**
 
 Each company has its jargon.
-The leaders of industries heavily inspire some companies, like the recent popularity of [*squads*, *tribes*, and *chapters*](https://www.atlassian.com/agile/agile-at-scale/spotify), introduced by Spotify.
+The leaders of industries heavily inspire some companies, like the recent popularity of [_squads_, _tribes_, and _chapters_](https://www.atlassian.com/agile/agile-at-scale/spotify), introduced by Spotify.
 Other companies revel in [impenetrable acronyms](https://gist.github.com/klaaspieter/12cd68f54bb71a3940eae5cdd4ea1764).
 
 Aside from acronyms, there are also shortcuts for specific behaviors, processes, or goals, such as [providing radical candor](https://en.wikipedia.org/wiki/Radical_Candor) or [getting the flywheel going](https://amplitude.com/blog/product-flywheels).
 
-*Don't resist.*
+_Don't resist._
 
 By leveraging internal jargon, you create tripwires in your writing that catch the reader's attention, slow them down, and activate their curiosity.
 You shouldn't pack your writing full of buzzwords, but leveraging the right word or phrase at the right time makes your content feel more relevant.
@@ -183,8 +183,7 @@ If that doesn't feel like an option, ping me on Twitter [@jankratochvilcz](https
 
 The above represents my personal experience; a few caveats apply.
 
-* The techniques above worked well for me in a primarily meritocratic setting. I suspect they may be less effective at companies with a proceduralist worldview. See [Meritocrats and Proceduralists](https://staffeng.com/guides/finding-the-right-company).
-* I have been lucky to have bosses who have consistently provided me with sponsorship and trust to take actions I feel are in the company's best interest.
+- The techniques above worked well for me in a primarily meritocratic setting. I suspect they may be less effective at companies with a proceduralist worldview. See [Meritocrats and Proceduralists](https://staffeng.com/guides/finding-the-right-company).
+- I have been lucky to have bosses who have consistently provided me with sponsorship and trust to take actions I feel are in the company's best interest.
 
 Cover photo by Photo by [Avi Richards](https://unsplash.com/@avirichards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-  
