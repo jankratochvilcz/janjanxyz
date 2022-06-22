@@ -41,7 +41,9 @@ const Post: NextPage<BlogProps> = ({
 }: {
   post: SerializedPostMetadata & Pick<Post, "content">;
 }) => {
-  const imagePath = path.join(getConfiguration().siteUrl, post.image);
+  const siteUrl = getConfiguration().siteUrl;
+  const imagePath = path.join(siteUrl, post.image);
+  const canonicalUrl = path.join(siteUrl, "blog", post.slug)
 
   return (
     <PageRoot>
@@ -50,6 +52,7 @@ const Post: NextPage<BlogProps> = ({
         <meta property="og:title" content={post.title} />
         <meta property="og:image" content={imagePath} />
         <meta property="og:description" content={post.preview} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@jankratochvilcz" />
         <meta name="twitter:title" content={post.title} />
