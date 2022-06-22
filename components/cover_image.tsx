@@ -1,9 +1,16 @@
+import classNames from "classnames";
 import Image from "next/image";
 import { PostMetadata } from "../services/posts";
 import styles from "../styles/CoverImage.module.css";
 
-const CoverImage = ({ post }: { post: PostMetadata }) => (
-  <div className={styles["image-container"]}>
+const CoverImage = ({
+  post,
+  className,
+}: {
+  post: PostMetadata;
+  className?: string;
+}) => (
+  <div className={classNames(styles["image-container"], className)}>
     <Image
       src={post.image}
       alt={post.title}

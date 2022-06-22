@@ -1,18 +1,18 @@
 .blog-root {
-  padding: 1rem 4rem;
+  padding: 1rem 0;
   box-shadow: var(--decorations-box-shadow);
 }
 
-.blog-post img {
+.blog-root img {
   max-width: 100%;
 }
 
-.blog-post h2 {
-  margin-top: 4rem;
+.blog-root h2 {
+  margin-top: 2rem;
 }
 
-.blog-post h3 {
-  margin-top: 3rem;
+.blog-root h3 {
+  margin-top: 2rem;
 }
 
 .metadata {
@@ -26,6 +26,6 @@
 
 @media (max-width: 800px) {
   .blog-root {
-    padding: 1rem 0.5rem;
+    padding: 1rem 0;
   }
 }
