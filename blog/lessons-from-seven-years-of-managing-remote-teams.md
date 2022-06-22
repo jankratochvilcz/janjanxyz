@@ -186,4 +186,4 @@ The above represents my personal experience; a few caveats apply.
 - The techniques above worked well for me in a primarily meritocratic setting. I suspect they may be less effective at companies with a proceduralist worldview. See [Meritocrats and Proceduralists](https://staffeng.com/guides/finding-the-right-company).
 - I have been lucky to have bosses who have consistently provided me with sponsorship and trust to take actions I feel are in the company's best interest.
 
-Cover photo by Photo by [Avi Richards](https://unsplash.com/@avirichards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+_Cover photo by Photo by [Avi Richards](https://unsplash.com/@avirichards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._
