@@ -13,6 +13,8 @@ import styles from "../../styles/Post.module.css";
 import Head from "next/head";
 import { toStaticProps } from "../../utils/staticPropHelpers";
 import PostContents from "../../components/post_contents";
+import { getConfiguration } from "../../services/configuration";
+import path from "path";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -42,6 +44,9 @@ const Post: NextPage<BlogProps> = ({
   <PageRoot>
     <Head>
       <title>{post.title} | Jan Kratochvil</title>
+      <meta property="og:title" content={post.title} />
+      <meta property="og:image" content={path.join(getConfiguration().siteUrl, post.image)} />
+      <meta property="og:description" content={post.preview} />
     </Head>
     <div className={styles["blog-root"]}>
       <PostContents
