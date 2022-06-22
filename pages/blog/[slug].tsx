@@ -40,26 +40,32 @@ const Post: NextPage<BlogProps> = ({
   post,
 }: {
   post: SerializedPostMetadata & Pick<Post, "content">;
-}) => (
-  <PageRoot>
-    <Head>
-      <title>{post.title} | Jan Kratochvil</title>
-      <meta property="og:title" content={post.title} />
-      <meta
-        property="og:image"
-        content={path.join(getConfiguration().siteUrl, post.image)}
-      />
-      <meta property="og:description" content={post.preview} />
-    </Head>
-    <div className={styles["blog-root"]}>
-      <PostContents
-        metadata={deserialize(post)}
-        content={post.content}
-        contentType={"blog"}
-      />
-      <div className={styles["ijou"]}>～　以上　～</div>
-    </div>
-  </PageRoot>
-);
+}) => {
+  const imagePath = path.join(getConfiguration().siteUrl, post.image);
+
+  return (
+    <PageRoot>
+      <Head>
+        <title>{post.title} | Jan Kratochvil</title>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:description" content={post.preview} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@jankratochvilcz" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.preview} />
+        <meta name="twitter:image" content={imagePath} />
+      </Head>
+      <div className={styles["blog-root"]}>
+        <PostContents
+          metadata={deserialize(post)}
+          content={post.content}
+          contentType={"blog"}
+        />
+        <div className={styles["ijou"]}>～　以上　～</div>
+      </div>
+    </PageRoot>
+  );
+};
 
 export default Post;
