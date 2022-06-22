@@ -58,6 +58,7 @@ const Post: NextPage<BlogProps> = ({
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.preview} />
         <meta name="twitter:image" content={imagePath} />
+        <meta name="twitter:image:alt" content={post.title} />
       </Head>
       <div className={styles["blog-root"]}>
         <PostContents
