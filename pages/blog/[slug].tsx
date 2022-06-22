@@ -42,8 +42,8 @@ const Post: NextPage<BlogProps> = ({
   post: SerializedPostMetadata & Pick<Post, "content">;
 }) => {
   const siteUrl = getConfiguration().siteUrl;
-  const imagePath = path.join(siteUrl, post.image);
-  const canonicalUrl = path.join(siteUrl, "blog", post.slug);
+  const imagePath = new URL(post.image, siteUrl).href;
+  const canonicalUrl = new URL(path.join("blog", post.slug), siteUrl).href;
 
   return (
     <PageRoot>
