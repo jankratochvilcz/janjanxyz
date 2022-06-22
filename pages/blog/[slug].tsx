@@ -68,7 +68,7 @@ const Post: NextPage<BlogProps> = ({
             />
             <meta name="og:image:alt" content={post.title} />
             <meta name="og:image:width" content="1200" />
-            <meta name="og:image:height" content="630" />
+            <meta name="og:image:height" content="628" />
           </>
         )}
       </Head>
