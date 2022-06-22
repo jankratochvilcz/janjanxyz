@@ -11,6 +11,7 @@ export default function Document() {
         />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:site_name" content={BLOG_TITLE} />
+        <meta name="author" content="Jan Kratochvil" />
       </Head>
       <body>
         <Main />

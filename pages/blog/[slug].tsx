@@ -50,7 +50,7 @@ const Post: NextPage<BlogProps> = ({
       <Head>
         <title>{post.title} | Jan Kratochvil</title>
         <meta property="og:title" content={post.title} />
-        <meta property="og:image" content={imagePath} />
+        <meta name="image" property="og:image" content={imagePath} />
         <meta property="og:description" content={post.preview} />
         <meta property="og:url" content={canonicalUrl} />
         <meta name="twitter:card" content="summary_large_image" />
