@@ -51,9 +51,8 @@ const Post: NextPage<BlogProps> = ({
   return (
     <PageRoot>
       <Head>
-        <title>{post.title} | Jan Kratochvil</title>
+        <title>{post.title} | Jan Kratochvil TEST</title>
         <meta property="og:title" content={post.title} />
-        {/* <meta property="og:description" content={post.preview} /> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta name="twitter:card" content="summary_large_image" />
