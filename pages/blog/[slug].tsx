@@ -62,14 +62,8 @@ const Post: NextPage<BlogProps> = ({
         <meta name="twitter:description" content={post.preview} />
         {twitterImagePath && (
           <>
-            <meta
-              property="og:image"
-              content={twitterImagePath}
-            />
-            <meta
-              property="twitter:image"
-              content={twitterImagePath}
-            />
+            <meta property="og:image" content={twitterImagePath} />
+            <meta property="twitter:image" content={twitterImagePath} />
             <meta name="og:image:alt" content={post.title} />
           </>
         )}
