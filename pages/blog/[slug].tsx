@@ -54,7 +54,6 @@ const Post: NextPage<BlogProps> = ({
         <title>{post.title} | Jan Kratochvil</title>
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.preview} />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@jankratochvilcz" />
@@ -62,9 +61,14 @@ const Post: NextPage<BlogProps> = ({
         <meta name="twitter:description" content={post.preview} />
         {twitterImagePath && (
           <>
-            <meta property="og:image" content={twitterImagePath} />
-            <meta property="twitter:image" content={twitterImagePath} />
+            <meta
+              name="og:image"
+              property="og:image"
+              content={twitterImagePath}
+            />
             <meta name="og:image:alt" content={post.title} />
+            <meta name="og:image:width" content="1200" />
+            <meta name="og:image:height" content="628" />
           </>
         )}
       </Head>
