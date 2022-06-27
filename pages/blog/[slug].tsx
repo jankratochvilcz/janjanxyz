@@ -43,9 +43,7 @@ const Post: NextPage<BlogProps> = ({
 }) => {
   const siteUrl = getConfiguration().siteUrl;
   const imagePath = new URL(post.image, siteUrl).href;
-  const twitterImagePath = post.twitterImage
-    ? new URL(post.twitterImage, siteUrl).href
-    : undefined;
+  const twitterImagePath = "https://uploads-ssl.webflow.com/61d29950a0018f45f59df443/62ac13b76ffa40b5dc2dcb28_graphimage2.jpg"
   const canonicalUrl = new URL(path.join("blog", post.slug), siteUrl).href;
 
   return (
