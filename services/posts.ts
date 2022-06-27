@@ -7,7 +7,7 @@ export type PostMetadata = {
   date: Date;
   slug: string;
   image: string;
-  twitterImage?: string; // needs to be 1200x630 https://webmasters.stackexchange.com/a/130911
+  twitterImage?: string;
 };
 
 export type Post = PostMetadata & {
