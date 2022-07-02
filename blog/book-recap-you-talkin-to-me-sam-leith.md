@@ -8,7 +8,7 @@ preview: |
 
   He succeeds.
 coverImage: "/blog/kristina-paparo-XSDTr93bhBo-unsplash.jpg"
-twitterImage: "/blog/kristina-paparo-XSDTr93bhBo-unsplash-twitter.jpg"
+twitterImage: "/blog/kristina-paparo-XSDTr93bhBo-unsplash-twitter.png"
 ---
 
 [You Talkin' To Me: Rhetoric from Aristotle to Trump and Beyond](https://amzn.to/3R6kkhN) is a lighthearted introduction to the field of **rhetorics**.
