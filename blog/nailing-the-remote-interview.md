@@ -176,4 +176,3 @@ Good luck out there! 🍀
 〜
 
 _Cover photo by Photo by [amirali mirhashemian](https://unsplash.com/@amir_v_ali?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/red-thread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._
-  
