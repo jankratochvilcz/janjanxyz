@@ -94,4 +94,4 @@ export const getPostUrl = (contentType: PostType, postSlug: string) => {
   const prefix: PostFolders = contentType === "blog" ? "blog" : "projects";
   const url = `/${prefix}/${postSlug}`;
   return url;
-}
+};

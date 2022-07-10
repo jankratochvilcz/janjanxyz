@@ -96,7 +96,8 @@
   color: var(--colors-theme-primary);
 }
 
-.last-post:hover, .last-post:active {
+.last-post:hover,
+.last-post:active {
   text-decoration: underline;
 }
 
