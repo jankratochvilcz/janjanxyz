@@ -14,6 +14,8 @@ export type Post = PostMetadata & {
   content: string;
 };
 
+export type PostType = "blog" | "project";
+
 export type ReadDirFunc = (folder: string) => string[];
 export type ReadFileFunc = (file: string, encoding: BufferEncoding) => string;
 
@@ -87,3 +89,9 @@ const parseMetadata = (
   image: frontmatter["coverImage"],
   twitterImage: frontmatter["twitterImage"] ?? null,
 });
+
+export const getPostUrl = (contentType: PostType, postSlug: string) => {
+  const prefix: PostFolders = contentType === "blog" ? "blog" : "projects";
+  const url = `/${prefix}/${postSlug}`;
+  return url;
+};
