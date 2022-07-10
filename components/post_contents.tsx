@@ -1,4 +1,4 @@
-import { PostFolders, PostMetadata } from "../services/posts";
+import { getPostUrl, PostFolders, PostMetadata, PostType } from "../services/posts";
 import styles from "../styles/PostContents.module.css";
 import mdHighlightJs from "markdown-it-highlightjs";
 import Link from "./link";
@@ -6,7 +6,7 @@ import CoverImage from "./cover_image";
 import md from "markdown-it";
 import "highlight.js/styles/github.css";
 
-export type ContentType = "blog" | "project";
+
 
 const PostContents = ({
   metadata,
@@ -15,10 +15,9 @@ const PostContents = ({
 }: {
   metadata: PostMetadata;
   content?: string;
-  contentType: ContentType;
+  contentType: PostType;
 }) => {
-  const prefix: PostFolders = contentType === "blog" ? "blog" : "projects";
-  const url = `/${prefix}/${metadata.slug}`;
+  const url = getPostUrl(contentType, metadata.slug);
 
   const previewContent = !content
     ? `${metadata.preview}
