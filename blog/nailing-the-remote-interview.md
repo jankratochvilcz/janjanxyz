@@ -44,7 +44,7 @@ Go through them, and **think about how your potential employer's core values rel
 Think of examples you could tactically employ to prove your alignment with the company's values throughout the interview.
 You won't always have a chance to showcase them, but when a window of opportunity opens, seize it, and the day with it. 🕺
 
-The higher the interviewer is on the company ladder, the more they tend to care about core values and emphasize alignment over specific skills due to the widespread managerial belief that *Culture is King*.
+The higher the interviewer is on the company ladder, the more they tend to care about core values and emphasize alignment over specific skills due to the widespread managerial belief that _Culture is King_.
 
 ### Team-Specific Context
 
@@ -113,9 +113,9 @@ When asked a question, following the below structure religiously yields great re
 
 By following this structure, you are showcasing a multitude of behaviors most interviews search for.
 
-* You communicate effectively, a highly valued trait in remote organizations.
-* By pausing to think, you signal that you tend to give problems proper thought instead of saying the first thing that pops into mind.
-* By asking for follow-ups, you show you don't think you have all the answers, are capable of a dialog, and are not afraid of feedback.
+- You communicate effectively, a highly valued trait in remote organizations.
+- By pausing to think, you signal that you tend to give problems proper thought instead of saying the first thing that pops into mind.
+- By asking for follow-ups, you show you don't think you have all the answers, are capable of a dialog, and are not afraid of feedback.
 
 Being explicit about the structure of your answer also illustrates a broader point.
 
@@ -161,9 +161,9 @@ This trick helps the interviewer grasp your experience more quickly and nudge yo
 
 The next step is to think about your unique value add before the interview and generate tactical examples you could use to express it.
 
-*Are you excellent at facilitating collaboration between teams?*
+_Are you excellent at facilitating collaboration between teams?_
 
-*What stories could you tell that demonstrate this?*
+_What stories could you tell that demonstrate this?_
 
 **The priority is always to answer the interviewer's question, not to talk about things that make you look good.**
 
@@ -180,9 +180,9 @@ In remote, the recruiter can help you fill in for some of the informal conversat
 
 Here are a few questions you can ask that most recruiters will be happy to probe for on your behalf:
 
-- *How did I do in that specific interview? Can you share perceived strengths and weaknesses?*
-- *What will the following interview be? If it's a test task, how can I prepare?*
-- *What would you recommend I read before the next interview?*
+- _How did I do in that specific interview? Can you share perceived strengths and weaknesses?_
+- _What will the following interview be? If it's a test task, how can I prepare?_
+- _What would you recommend I read before the next interview?_
 
 You will be surprised how much information the recruiter is willing to share to help you.
 
