@@ -7,7 +7,7 @@ preview: |
 
   This post outlines a few practices you can deploy to perform better in remote interviews and subsequently land a great job.
 coverImage: "/blog/amirali-mirhashemian-hTeYcjviZ-s-unsplash.jpg"
-twitterImage: "/blog/amirali-mirhashemian-hTeYcjviZ-s-unsplash.png"
+twitterImage: "/blog/amirali-mirhashemian-hTeYcjviZ-s-unsplash-twitter.png"
 ---
 
 It has become commonplace for companies to run their interview process remotely.
