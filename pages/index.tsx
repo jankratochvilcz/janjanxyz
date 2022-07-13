@@ -1,6 +1,7 @@
 import type { InferGetStaticPropsType, NextPage } from "next";
 import fs from "fs";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import SocialIcon from "../components/social_icon";
 import { rssRoot } from "../const/paths";
@@ -12,6 +13,9 @@ import { toStaticProps } from "../utils/staticPropHelpers";
 import { BLOG_DESCRIPTION } from "../const/strings";
 
 type HomeProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+const logoSize = 128;
+const logoUri = "/favicon-192.png";
 
 export const getStaticProps = () => {
   const { siteUrl } = getConfiguration();
@@ -54,8 +58,15 @@ const Home: NextPage<HomeProps> = ({ posts }: HomeProps) => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <div>ヤ</div>
-          <br />
+          <div className={styles["logo-container"]}>
+            <Image
+              src={logoUri}
+              alt="Logo"
+              layout={"fixed"}
+              width={logoSize}
+              height={logoSize}
+            />
+          </div>
           Hi, my name is <span className={styles["author-name"]}>Jan</span>.
         </h1>
 
