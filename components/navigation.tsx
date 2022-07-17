@@ -31,7 +31,7 @@ const Navigation = () => {
             width={logoSize}
             height={logoSize}
           />
-      </div>
+        </div>
       </Link>
       <ul className={styles.navigation}>
         {routes.map(({ path, title }) => (
