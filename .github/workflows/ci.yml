@@ -5,11 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       - name: Format files with Prettier
         uses: creyD/prettier_action@v4.2
         with:
           prettier_options: --write .
+          only_changed: True
 
       - name: Install dependencies
         run: npm ci
