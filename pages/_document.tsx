@@ -9,7 +9,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="/favicon-32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-128.png" sizes="128x128" />
+        <link rel="icon" href="/favicon-180.png" sizes="180x180" />
+        <link rel="icon" href="/favicon-192.png" sizes="192x192" />
         <meta property="og:site_name" content={BLOG_TITLE} />
         <meta name="author" content="Jan Kratochvil" />
       </Head>

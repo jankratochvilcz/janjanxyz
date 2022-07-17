@@ -44,7 +44,8 @@ a {
 }
 
 :root {
-  --colors-theme-primary: #bd0029;
+  /* 孔雀青: 孔雀の青い羽の色を表現した色です。鮮やかで綺麗な色ですよね！孔雀青は明治の頃に西洋から伝わった「ピーコックブルー」を和訳したものです。*/
+  --colors-theme-primary: #0086a2;
   --colors-gray: gray;
   --colors-gray-light: #ededed;
   --colors-background: #fdfdfd;
