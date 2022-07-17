@@ -8,13 +8,18 @@ import {
   deserialize,
   SerializedPostMetadata,
   Post,
+  getPostTwitterShareUrl,
+  getPostLinkedInShareUrl,
 } from "../../services/posts";
 import styles from "../../styles/Post.module.css";
 import Head from "next/head";
+import Image from "next/image";
 import { toStaticProps } from "../../utils/staticPropHelpers";
 import PostContents from "../../components/post_contents";
 import { getConfiguration } from "../../services/configuration";
 import path from "path";
+import { BLOG_TWITTER_HANDLE } from "../../const/strings";
+import SocialIcon from "../../components/social_icon";
 
 type BlogProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -35,6 +40,8 @@ export const getStaticProps = ({
   const post = getPost("blog", slug, fs.readFileSync);
   return toStaticProps({ post: serialize(post) });
 };
+
+const AUTHOR_IMAGE_DIMENSIONS = 128;
 
 const Post: NextPage<BlogProps> = ({
   post,
@@ -78,7 +85,28 @@ const Post: NextPage<BlogProps> = ({
           content={post.content}
           contentType={"blog"}
         />
-        <div className={styles["ijou"]}>～　以上　～</div>
+        <div className={styles["share-buttons"]}>
+          <SocialIcon
+            href={getPostTwitterShareUrl(post.slug, post.title, "blog")}
+            alt="Twitter profile link"
+            src="/social/social-1_logo-twitter.svg"
+          />
+          <SocialIcon
+            href={getPostLinkedInShareUrl(post.slug, "blog")}
+            alt="LinkedIn profile link"
+            src="/social/social-1_logo-linkedin.svg"
+          />
+        </div>
+        <div className={styles["about-author"]}>
+          <a href={`https://twitter.com/${BLOG_TWITTER_HANDLE}`}>
+            <Image
+              src="/social/author.jpg"
+              alt="Author picture"
+              width={AUTHOR_IMAGE_DIMENSIONS}
+              height={AUTHOR_IMAGE_DIMENSIONS}
+            />
+          </a>
+        </div>
       </div>
     </PageRoot>
   );

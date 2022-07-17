@@ -1,5 +1,7 @@
 import { parse } from "date-fns";
 import matter from "gray-matter";
+import { BLOG_TWITTER_HANDLE } from "../const/strings";
+import { getConfiguration } from "./configuration";
 
 export type PostMetadata = {
   title: string;
@@ -94,4 +96,38 @@ export const getPostUrl = (contentType: PostType, postSlug: string) => {
   const prefix: PostFolders = contentType === "blog" ? "blog" : "projects";
   const url = `/${prefix}/${postSlug}`;
   return url;
+};
+
+const getPostUrlAbsolute = (contentType: PostType, slug: string) => {
+  const siteUrl = getConfiguration().siteUrl;
+
+  const url = new URL(getPostUrl(contentType, slug), siteUrl).href;
+  return url;
+};
+
+export const getPostTwitterShareUrl = (
+  slug: string,
+  title: string,
+  contentType: PostType
+) => {
+  const url = getPostUrlAbsolute(contentType, slug);
+  const encodedUrl = encodeURIComponent(url);
+  const encodedText = encodeURIComponent(title);
+  const encodedHandle = encodeURIComponent(BLOG_TWITTER_HANDLE);
+
+  const result = `https://twitter.com/intent/tweet?via=${encodedHandle}&text=${encodedText}&url=${encodedUrl}`;
+
+  return result;
+};
+
+export const getPostLinkedInShareUrl = (
+  slug: string,
+  contentType: PostType
+) => {
+  const url = getPostUrlAbsolute(contentType, slug);
+  const encodedUrl = encodeURIComponent(url);
+
+  const result = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+
+  return result;
 };
