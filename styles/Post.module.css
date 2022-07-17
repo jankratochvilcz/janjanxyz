@@ -19,9 +19,34 @@
   color: var(--colors-gray);
 }
 
-.ijou {
+.share-buttons,
+.about-author {
+  margin-top: 4em;
   text-align: center;
-  padding: 2rem;
+}
+
+.share-buttons a,
+.about-author a {
+  color: var(--colors-theme-primary);
+}
+
+.share-buttons a:hover,
+.about-author a:hover {
+  text-decoration: underline;
+}
+
+.about-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-author img {
+  border-radius: 100%;
+}
+
+.about-author > *:last-child {
+  margin-top: 1em;
 }
 
 @media (max-width: 800px) {
