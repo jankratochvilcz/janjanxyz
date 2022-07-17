@@ -10,7 +10,8 @@
     "lint:check": "next lint",
     "format:fix": "npx prettier --write .",
     "format:check": "npx prettier --check .",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "husky install"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -35,6 +36,7 @@
     "ava": "^4.3.0",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "husky": "^8.0.1",
     "prettier": "2.6.2",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.2"
