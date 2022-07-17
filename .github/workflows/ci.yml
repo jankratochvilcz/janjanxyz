@@ -6,13 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Format files with Prettier
         uses: creyD/prettier_action@v4.2
         with:
           prettier_options: --write .
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run Format Check
         run: npm run format:check
