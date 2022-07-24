@@ -49,5 +49,9 @@
     "require": [
       "ts-node/register"
     ]
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": "16.6.0"
   }
 }
