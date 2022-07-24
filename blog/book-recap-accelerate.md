@@ -3,15 +3,16 @@ title: "Accelerate: The Four Metrics"
 date: "2022-07-24"
 preview: |
   Accelerate puts many practices, from continuous delivery to lean, under a microscope and whether they, in fact, *cause* organizations to start performing better, measured by business results.
-  
+
   It defines four key metrics to measure quality - Lead Time, Deployment Frequency, Mean Time to Restore, and Change Failure Percentage.
 coverImage: "/blog/chris-liverani-HUJDz6CJEaM-unsplash.jpg"
 twitterImage: "/blog/chris-liverani-HUJDz6CJEaM-unsplash-twitter.jpg"
 ---
 
-[Accelerate](https://amzn.to/3Px65BE) by Nicole Forsgren, Jez Humble, and Gene Kim is a fantastic book on what sets apart high-performing technical organizations from the pack. The book puts many practices, from continuous delivery to lean, under a microscope and whether they, in fact, *cause* organizations to start performing better, measured by business results.
+[Accelerate](https://amzn.to/3Px65BE) by Nicole Forsgren, Jez Humble, and Gene Kim is a fantastic book on what sets apart high-performing technical organizations from the pack. The book puts many practices, from continuous delivery to lean, under a microscope and whether they, in fact, _cause_ organizations to start performing better, measured by business results.
 
 One of the takeaways from the research the authors conducted is that software organizations ought to focus on four software delivery performance metrics relentlessly:
+
 1. (Delivery) Lead Time
 2. Deployment Frequency
 3. Mean Time to Restore
@@ -30,7 +31,7 @@ It does not include the design and development of the feature the code expressed
 
 Shorter lead times allow companies to iterate faster and resolve customer-impacting issues sooner after they are reported.
 
-*The latest data Accelerate measures come from 2017, so high-performing teams are still better. 🏃‍♂️ The authors find that high-performing organizations keep getting better, and the scissors between the best and the worst keep widening.*
+_The latest data Accelerate measures come from 2017, so high-performing teams are still better. 🏃‍♂️ The authors find that high-performing organizations keep getting better, and the scissors between the best and the worst keep widening._
 
 ### Deployment Frequency
 
@@ -38,7 +39,7 @@ Deployment frequency measures **how frequently are new versions shipped to produ
 
 **High-performing teams ship on demand, multiple times every day.**
 
-Deployment frequency also acts as a proxy measurement for *batch size*, where shipping more frequent, smaller changes is a good practice.
+Deployment frequency also acts as a proxy measurement for _batch size_, where shipping more frequent, smaller changes is a good practice.
 
 ### Mean Time to Restore
 
@@ -72,11 +73,10 @@ Further, speed can be an enabler of better product quality, as practices like co
 To progress on the four metrics above, many practices will help you along the way.
 Accelerate does a great job of summarizing them; check them out!
 
-In short, Accelerate finds that **widely accepted technical best practices work**. 
+In short, Accelerate finds that **widely accepted technical best practices work**.
 
 You won't be surprised to read that putting things into version control, trunk-based development, automating your tests, loose system coupling, and "shifting left on everything" will improve your team's performance.
 
 Further, [a generative culture](https://qualitysafety.bmj.com/content/13/suppl_2/ii22) with high levels of trust is a critical enabler to give technical organizations the tools and confidence to keep improving.
 
-*Photo by [Chris Liverani](https://unsplash.com/@chrisliverani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/fast?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
-  
+_Photo by [Chris Liverani](https://unsplash.com/@chrisliverani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/fast?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
