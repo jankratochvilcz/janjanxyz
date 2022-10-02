@@ -12,10 +12,9 @@ coverImage: "/blog/seven-sins-of-reviewing-pull-requests.png"
 twitterImage: "/blog/seven-sins-of-reviewing-pull-requests.png"
 ---
 
-
 Are you a developer?
 
-If yes, you have a complicated relationship with *PRs* (pull requests).
+If yes, you have a complicated relationship with _PRs_ (pull requests).
 You spend a generous chunk of time reviewing PRs, sometimes not finding time for much else.
 
 On occasion, your reviews are a blast.
@@ -53,10 +52,11 @@ The delays don't happen because of harsh feedback, but because everyone, you inc
 **The Problem**
 
 When reviews are not a priority, hard-to-quantify, but rampant time wasting becomes the norm:
-* Feature branches live longer, causing painfully-frequent merge conflicts.
-* Your branching strategy is reminiscent of a poorly-maintained bonsai tree. Pruning it is just as futile.
-* When you encounter bugs, you are unsure whether it's already squashed somewhere else in your bonsai.
-* By the time you get a review, you have mostly forgotten the details of your implementation. To rebuke your reviewer, you need to spend more time refreshing on the code you've written.
+
+- Feature branches live longer, causing painfully-frequent merge conflicts.
+- Your branching strategy is reminiscent of a poorly-maintained bonsai tree. Pruning it is just as futile.
+- When you encounter bugs, you are unsure whether it's already squashed somewhere else in your bonsai.
+- By the time you get a review, you have mostly forgotten the details of your implementation. To rebuke your reviewer, you need to spend more time refreshing on the code you've written.
 
 **The Solution**
 
@@ -72,24 +72,25 @@ If you can't find time for reviews no matter what you do, **review PRs first thi
 
 When you review PRs, you sometimes have trouble articulating your specific concerns and how the author could mitigate them.
 Regardless, there's nothing worse than unspoken worries, so you write comments like:
-* *I'm not sure whether this is a suitable architecture for the solution...*
-* *This part of the code is on a hot path, so we should address performance concerns.*
-* *The formatting of this section could be improved.*
+
+- _I'm not sure whether this is a suitable architecture for the solution..._
+- _This part of the code is on a hot path, so we should address performance concerns._
+- _The formatting of this section could be improved._
 
 **The Problem**
 
 It's unclear what you want the PR author to do; you only create FUD (a.k.a. fear, uncertainty, and doubt).
 This kind of feedback puts the author in a challenging position.
-They need to resolve your comment to move forward, but there is no *specific* change to make; dispelling vague concerns is hard.
+They need to resolve your comment to move forward, but there is no _specific_ change to make; dispelling vague concerns is hard.
 In most cases, the author will attempt a blanket justification of the current design to soothe your concerns.
 
 Arguing against vague feedback gets harder the more junior the developer.
-Junior developers frequently assume that their seniors' vague concerns are valid. *How can you argue with people that know so dang many shortcuts?*
+Junior developers frequently assume that their seniors' vague concerns are valid. _How can you argue with people that know so dang many shortcuts?_
 As a junior developer, it's hard to muster the confidence to tell the reviewer to put more thought into their feedback or rescind it.
 
 **Solution**
 
-Always make sure you're either **making a *specific* ask about a change that would resolve your comment** (even if that means starting over) or clarify the comment is just food for thought - you expect no action, just acknowledgment.
+Always make sure you're either **making a _specific_ ask about a change that would resolve your comment** (even if that means starting over) or clarify the comment is just food for thought - you expect no action, just acknowledgment.
 
 ## 3. Unrelated Asks in Reviews
 
@@ -99,13 +100,13 @@ One of your API endpoints doesn't require user authorization by mistake.
 You are reviewing the PR that adds authorization to the endpoint by reusing what other parts of the application have been doing for the past two years.
 
 You take this as an opportunity to explore how authorization works in the API and discover flaws in the design.
-You leave a comment along the lines of *The authorization mechanism we use has security gaps; we should switch away from basic auth towards OAuth.*
+You leave a comment along the lines of _The authorization mechanism we use has security gaps; we should switch away from basic auth towards OAuth._
 
 **Problem**
 
 While you may have a point, the roots of the troubles are not in the PR.
 You will get pushback, and the feedback will either fizzle or eventually be moved to a different place to placate you.
-It takes a few days to arrive at the inevitable *Let's make a thread in Slack!*, causing an unnecessary slowdown.
+It takes a few days to arrive at the inevitable _Let's make a thread in Slack!_, causing an unnecessary slowdown.
 
 **Solution**
 
@@ -120,14 +121,15 @@ You are reviewing a PR of a more junior developer.
 You notice possible refactors.
 They are not essential but could be a great learning opportunity for the PR author.
 With excitement, you add comments like:
-* *This could be more concise if you used the function X of library Y we have in the codebase.*
-* *By changing the formatting to X, the code would be more readable.*
+
+- _This could be more concise if you used the function X of library Y we have in the codebase._
+- _By changing the formatting to X, the code would be more readable._
 
 **Problem**
 
 Your suggestions are genuinely helpful!
 Comments like this induce team learning, the nirvana of pull request reviews.
-They are just not *must-haves*.
+They are just not _must-haves_.
 
 Depending on the circumstance, shipping the code earlier could be more valuable than finessing the syntax (assuming it was OK in the first place).
 You might not have the context to make that call.
@@ -136,10 +138,10 @@ By creating a lot of suggestions like this, you are ensuring there will need to 
 **Solution**
 
 This problem has the easiest fix from the whole list.
-Prefix your comment with an *(optional)* text snippet.
+Prefix your comment with an _(optional)_ text snippet.
 This snippet lets the author know that adopting the feedback is welcome but not required.
 
-*Comments marked this way tend to be well-received by PR authors. They indicate you trust the author to make the final call, fostering a sense of agency and collaboration in the team.*
+_Comments marked this way tend to be well-received by PR authors. They indicate you trust the author to make the final call, fostering a sense of agency and collaboration in the team._
 
 ## 5. Commenting without Reviewing
 
@@ -156,7 +158,7 @@ You are a nice person.
 Marking a PR as "changes requested" feels so...harsh. Who even has the heart to press that button?
 
 You prefer just to add comments until you can approve.
-Much more aligned with the personality archetype you posess according to the latest [16Personalities](https://www.16personalities.com/) run-through you did. 
+Much more aligned with the personality archetype you posess according to the latest [16Personalities](https://www.16personalities.com/) run-through you did.
 
 **Problem**
 
@@ -181,8 +183,9 @@ You can leave a friendly message on the PR along the lines of "looks good, we ju
 **Situation**
 
 You are reviewing a PR from a colleague who recently joined the team and you want to help them align their style to your team's. You write comments like:
-* *Use function X from library Y for async operations*
-* *Rename this JSON property to snake case*
+
+- _Use function X from library Y for async operations_
+- _Rename this JSON property to snake case_
 
 **Problem**
 
@@ -234,11 +237,10 @@ PRs are a tricky part of the modern software development lifecycle.
 Even with an all-hands-on-deck effort, frustrations won't disappear overnight.
 There are no silver bullets for handling PR reviews.
 
-The name of the game is *kaizen*, small and incremental but persistent improvements.
+The name of the game is _kaizen_, small and incremental but persistent improvements.
 Submitting crystal-clear feedback, not blocking merges unnecessarily, and providing consistent review times will make you an outstanding reviewer of any team.
 The authors of PRs you review will notice and start copying you.
 
 Before you know it, the team review culture will shift from slow and frustrating to something more joyful and valuable.
 
 Photo by[五玄土 ORIENTO](https://unsplash.com/@oriento?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bonsai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  
