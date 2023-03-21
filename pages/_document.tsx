@@ -6,7 +6,11 @@ export default function Document() {
     <Html>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap"
           rel="stylesheet"
         />
 
