@@ -6,7 +6,7 @@ preview: |
 coverImage: "/blog/nana-smirnova-IEiAmhXehwE-unsplash.jpg"
 ---
 
-WWhat is a *data lakehouse*? How is *ELT* different from *ETL*? And what the heck is a *semantic layer*?
+WWat is a *data lakehouse*? How is *ELT* different from *ETL*? And what the heck is a *semantic layer*?
 
 Below is a short attempt to summarize my learnings about the purpose of the individual components of the data engineering stack, how they relate to each other, and the relevant market offerings for each.
 
